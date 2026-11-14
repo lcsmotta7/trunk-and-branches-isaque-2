@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you reference this monograph or architecture in your research, please cite it using the metadata below."
+type: software
+title: "Trunk and Branches: Thermodynamic Parsimony, Frozen-Core Cortical Columns, and Non-Destructive Continual Specialization via Orthogonal DoRA and Sparsegen LD-MoLE Routing on Consumer Silicon (Isaque 2.0)"
+authors:
+  - family-names: "Motta"
+    given-names: "Lucas Alves"
+    orcid: "https://orcid.org/0009-0001-3081-5505"
+    affiliation: "Beyond Adonai Research Laboratory, Indaial, SC, Brazil"
+doi: "10.5281/zenodo.24221509"
+version: "5.0.0"
+date-released: "2026-11-14"
+license: "CC-BY-4.0"
+url: "https://doi.org/10.5281/zenodo.24221509"
+keywords:
+  - "Continual Learning"
+  - "DoRA"
+  - "O-LoRA"
+  - "Mixture of LoRA Experts"
+  - "LD-MoLE"
+  - "Sparsegen"
+  - "Thousand Brains Theory"
+  - "Energy-Efficient AI"
+  - "Blender 3D Synthesis"
+  - "Unreal Engine 5 C++20"
+preferred-citation:
+  type: report
+  title: "Trunk and Branches: Thermodynamic Parsimony, Non-Destructive Cortical Specialization, and Continual 3D/C++20 Synthesis on a Frozen 4B Foundation Model (Isaque 2.0)"
+  authors:
+    - family-names: "Motta"
+      given-names: "Lucas Alves"
+      orcid: "https://orcid.org/0009-0001-3081-5505"
+      affiliation: "Beyond Adonai Research Laboratory, Indaial, SC, Brazil"
+  institution:
+    name: "Beyond Adonai Research Laboratory"
+    city: "Indaial, SC"
+    country: "BR"
+  year: 2026
+  month: 11
+  doi: "10.5281/zenodo.24221509"
+  url: "https://doi.org/10.5281/zenodo.24221509"
