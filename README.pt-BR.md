@@ -5,6 +5,7 @@
 **Parcimônia Termodinâmica, Colunas Corticais de Núcleo Congelado e Especialização Contínua Não-Destrutiva via DoRA Ortogonal e Roteamento Sparsegen LD-MoLE em Silício Doméstico**
 
 [![CERN Zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24221509.svg)](https://doi.org/10.5281/zenodo.24221509)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97_Hugging_Face-lcsmotta7%2Ftrunk--and--branches--isaque--2-FFD21E)](https://huggingface.co/lcsmotta7/trunk-and-branches-isaque-2)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0001--3081--5505-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0001-3081-5505)
 [![Bitcoin Anchor](https://img.shields.io/badge/Bitcoin_OpenTimestamps-Bloco_%23975458-F7931A?logo=bitcoin&logoColor=white)](provenance/04-carimbo-de-data.md)
 [![Licença: CC BY 4.0](https://img.shields.io/badge/Licen%C3%A7a-CC_BY_4.0-16324F.svg)](https://creativecommons.org/licenses/by/4.0/deed.pt_BR)
