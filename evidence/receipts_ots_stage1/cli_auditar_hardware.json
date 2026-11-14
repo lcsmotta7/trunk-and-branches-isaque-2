@@ -1,0 +1,38 @@
+{
+  "status": "OK",
+  "comando": "auditar-hardware",
+  "hardware_rtx5060_sm120": {
+    "gpu_nome": "NVIDIA GeForce RTX 5060",
+    "compute_capability": "12.0",
+    "major": 12,
+    "minor": 0,
+    "streaming_multiprocessors": 30,
+    "vram_total_mib": 8123,
+    "memory_bus_width_bits": 128,
+    "sm120_nativo_ativo": true
+  },
+  "nvidia_smi_vram_usada_mib": 2296.0,
+  "nvidia_smi_vram_livre_mib": 5600.0,
+  "instantaneo_memoria_so": {
+    "working_set_bytes": 265744384,
+    "working_set_mib": 253.43359375,
+    "peak_working_set_bytes": 304361472,
+    "peak_working_set_mib": 290.26171875,
+    "private_usage_bytes": 372502528,
+    "private_usage_mib": 355.24609375,
+    "pagefile_usage_bytes": 372502528,
+    "pagefile_usage_mib": 355.24609375,
+    "page_fault_count": 139312,
+    "ram_fisica_total_mib": 64267.87890625,
+    "ram_fisica_disponivel_mib": 36000.92578125,
+    "pagefile_sistema_disponivel_mib": 30528.90625,
+    "carga_memoria_so_pct": 43
+  },
+  "vocabulario_qwen3_tokens": 248070,
+  "pool_moe_30b_a3b_bytes": 14495514624,
+  "colunas_corticais_provisionadas": 68,
+  "colunas_16mib_verificadas": 68,
+  "tamanho_individual_coluna_bytes": 16777736,
+  "bytes_gravados_no_disco_c": 0,
+  "descarga_zero_peso_em_background": true
+}

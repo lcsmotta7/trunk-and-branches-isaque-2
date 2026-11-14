@@ -61,6 +61,7 @@ Contemporary AI engineering predominantly pursues monolithic scaling: stacking h
 * [`paper/trunk_and_branches_isaque_2_0_en_doi_24221509.pdf`](paper/trunk_and_branches_isaque_2_0_en_doi_24221509.pdf) — Official 18-page English Monograph (`Rev. 5.0`, CERN DOI stamped).
 * [`paper/tronco_e_ramos_isaque_2_0_pt_br_doi_24221509.pdf`](paper/tronco_e_ramos_isaque_2_0_pt_br_doi_24221509.pdf) — Complete 18-page Brazilian Portuguese Twin Edition (`Rev. 5.0`, CERN DOI stamped).
 * [`paper/latex-en/`](paper/latex-en/) & [`paper/latex-pt-br/`](paper/latex-pt-br/) — Full reproducible TeX Live `pdflatex` sources and vector/high-DPI figures in both languages.
+* [`evidence/`](evidence/) — **Open Forensic Evidence & Raw Receipts Archive**: all **195 triangular retention measurements** (`3 x 65` cells in `ato2_escada_ondas_3_a_10.json`), **10/10 solo Isaque-generated 3D/C++20 wave outputs** (`exports == exports_recheck`), unedited negative boundary/collision probes (`DESAFIO-04_C` line 35 & `FUSAO_2_ONDAS_1_3_pass2.py` line 58), and compiled Technical Annexes ([English PDF](paper/annex_forensic_evidence_en_doi_24221509.pdf) · [Portuguese PDF](paper/anexo_evidencias_forenses_pt_br_doi_24221509.pdf)).
 * [`provenance/`](provenance/) — Stage-1 SHA-256 manifest (`79602f29...558be5dd`), `5,124`-byte binary OpenTimestamps proof (`.ots`) anchored at **Bitcoin Block `#975458`** (`2026-11-11 14:41 BRT`), and four-calendar blockchain verification log.
 * [`CITATION.cff`](CITATION.cff) — Machine-readable citation metadata (activates GitHub's *Cite this repository* button).
 

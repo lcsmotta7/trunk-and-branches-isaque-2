@@ -1,0 +1,164 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,margin=18mm,top=20mm,bottom=21mm,headheight=14pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathpazo}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,tabularx,array}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{microtype}
+\usepackage{caption}
+\usepackage[colorlinks=true,linkcolor=primary,citecolor=tealaccent,urlcolor=primary,
+  pdftitle={Forensic Evidence & Raw Receipts Annex -- Trunk and Branches (Isaque 2.0)},
+  pdfauthor={Lucas Alves Motta (ORCID: 0009-0001-3081-5505)},
+  pdfsubject={Supplementary Empirical Receipts, 195-Cell Triangular Matrices, Solo Model Outputs & Boundary Failure Proofs -- DOI: 10.5281/zenodo.24221509}]{hyperref}
+
+\definecolor{primary}{RGB}{22,50,79}
+\definecolor{tealaccent}{RGB}{27,127,121}
+\definecolor{goldaccent}{RGB}{175,118,16}
+\definecolor{calloutbg}{RGB}{244,248,251}
+\definecolor{warmbg}{RGB}{253,249,240}
+\definecolor{slate}{RGB}{82,96,109}
+
+\setlength{\parskip}{5.2pt plus 1.8pt minus 1pt}
+\setlength{\parindent}{0pt}
+\renewcommand{\arraystretch}{1.18}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\emergencystretch=3em
+\captionsetup{font=small,labelfont={bf,color=primary},skip=5pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\color{slate}\textit{Forensic Evidence \& Raw Receipts Annex --- Trunk and Branches (Isaque 2.0)}}
+\fancyhead[R]{\footnotesize\color{slate}\textit{Motta (2026)}}
+\fancyfoot[L]{\footnotesize\color{slate}\textit{Companion Annex to \href{https://doi.org/10.5281/zenodo.24221509}{\texttt{DOI:\,10.5281/zenodo.24221509}} $\cdot$ Open Evidence Archive (\texttt{evidence/})}}
+\fancyfoot[R]{\footnotesize\color{primary}\textbf{A-\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.3pt}
+
+\newcommand{\insightbox}[2]{%
+  \vspace{4pt}\noindent\fcolorbox{primary!45}{calloutbg}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+      \vspace{3pt}\textbf{\color{primary}#1.}\hspace{0.4em}#2\vspace{3pt}%
+    }%
+  }\vspace{4pt}%
+}
+
+\newcommand{\auditbox}[2]{%
+  \vspace{4pt}\noindent\fcolorbox{goldaccent!70}{warmbg}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+      \vspace{3pt}\textbf{\color{goldaccent!90!black}#1.}\hspace{0.4em}#2\vspace{3pt}%
+    }%
+  }\vspace{4pt}%
+}
+
+\begin{document}
+
+\begin{center}
+  {\footnotesize\bfseries\color{tealaccent}OFFICIAL SUPPLEMENTARY FORENSIC EVIDENCE \& REPRODUCIBILITY ANNEX $\cdot$ NOVEMBER 2026}\\[5pt]
+  {\LARGE\bfseries\color{primary}Raw Empirical Receipts, 195-Cell Continual Retention Matrices,\\[2pt]
+  Unassisted Neural Wave Outputs, and Authentic Boundary Failures}\\[6pt]
+  {\normalsize\itshape\color{slate}Companion Audit Dossier for ``Trunk and Branches'' (\textbf{Isaque 2.0}) --- Strict \texttt{R-VERDADE-OU-AJUDA} Verification}\\[8pt]
+  {\normalsize \textbf{Lucas Alves Motta}\,\textsuperscript{1}\hspace{0.5em}{\footnotesize\href{https://orcid.org/0009-0001-3081-5505}{\texttt{ORCID:\,0009-0001-3081-5505}}}}\\[2pt]
+  {\footnotesize \textsuperscript{1}\,Independent Systems Architect \& Principal Investigator, \textit{Beyond Adonai Research Laboratory}, Indaial, Santa Catarina, Brazil}\\
+  {\footnotesize CERN/Zenodo DOI: \href{https://doi.org/10.5281/zenodo.24221509}{\texttt{10.5281/zenodo.24221509}} $\cdot$ GitHub: \href{https://github.com/lcsmotta7/trunk-and-branches-isaque-2}{\texttt{lcsmotta7/trunk-and-branches-isaque-2}} $\cdot$ Hugging Face: \href{https://huggingface.co/lcsmotta7/trunk-and-branches-isaque-2}{\texttt{lcsmotta7/trunk-and-branches-isaque-2}}}
+\end{center}
+
+\insightbox{Purpose of This Annex}{Independent scientific scrutiny requires access not merely to typeset summary tables, but to the unaltered machine-emitted JSON receipts, deterministic compiler logs, unassisted model-generated source files, and authentic failure traces produced during laboratory execution. This annex maps every quantitative claim in the main monograph directly to the open \texttt{evidence/} archive distributed alongside \href{https://doi.org/10.5281/zenodo.24221509}{\texttt{DOI:\,10.5281/zenodo.24221509}}, certifying that \textbf{100\% of admitted code and geometry artifacts were synthesized token-by-token by Isaque~2.0 alone} while documenting the exact empirical failures that bounded each architectural theorem.}
+
+\section{Chain of Custody: Raw JSON Receipts and SHA-256 Verification Ledger}
+
+Every stage of the experimental campaign on the consumer reference station (Beelink SER9 \texttt{AMD Ryzen 7 255}, $64\text{ GB DDR5}$, USB4 eGPU \texttt{NVIDIA GeForce RTX 5060 8 GB GDDR7}) emitted structured JSON receipts hashed via SHA-256 prior to publication. Phase~I--V receipts are cryptographically anchored in Bitcoin Block \texttt{\#975458} via OpenTimestamps (\texttt{provenance/03-manifesto-\allowbreak{}sha256-\allowbreak{}etapa-1.txt.ots}), and Phase~VI ($10$-wave stress ladder) receipts are preserved bit-for-bit in \texttt{evidence/receipts\_\allowbreak{}act2\_\allowbreak{}10waves/} and \texttt{evidence/receipts\_\allowbreak{}ots\_\allowbreak{}stage1/}.
+
+\begin{table}[!htbp]
+\centering
+\caption{Master chain-of-custody inventory of unaltered raw JSON receipts included in the open \texttt{evidence/} package.}
+\label{tab:receipts}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}lrrY@{}}
+\toprule
+\textbf{Receipt File (\texttt{evidence/})} & \textbf{Bytes} & \textbf{SHA-256} & \textbf{What It Validates \& Why It Matters} \\
+\midrule
+\texttt{PROVA\_\allowbreak{}LIMITE\_\allowbreak{}...\_\allowbreak{}02.json} & $70,457$ & \texttt{9a47a6..b61033} & Master Phase~VI ledger: freezes \texttt{embed\_\allowbreak{}tokens} (\texttt{c78988..}), records $3\times 65=195$ retention cells, and logs $0$ residual GPU processes.\textsuperscript{*} \\
+\texttt{ato2\_\allowbreak{}escada\_\allowbreak{}ondas\_\allowbreak{}3\_\allowbreak{}a\_\allowbreak{}10.json} & $58,311$ & \texttt{fcd12d..04dccd} & Pure Act~2 continual stress ledger: $10$ waves ($H_0\dots H_{10}$), Frobenius $\text{orth\_\allowbreak{}sum}$, $195$ triangular cells, and token-fusion collision probe. \\
+\texttt{ato1\_\allowbreak{}desafio04\_\allowbreak{}cego.json} & $11,255$ & \texttt{1daf82..6ae0ad} & Unedited blind out-of-distribution test (\texttt{pass@1=false}): documents exact \texttt{USTRUCT*} \texttt{IsValid} line-35 failure and missing Blender sockets. \\
+\texttt{ato1\_\allowbreak{}promocao\_\allowbreak{}...\_\allowbreak{}3\_\allowbreak{}10.json} & $3,402$ & \texttt{485f0a..96eec3} & Diagnostic root-cause confirmation: proves \texttt{Row == nullptr} guard immediately restores $8/8$ C++20/UHT invariants without retraining. \\
+\texttt{PROVA\_\allowbreak{}ARENA\_\allowbreak{}KEV\_\allowbreak{}...\_\allowbreak{}01.json} & $127,048$ & \texttt{dae162..95ed093} & BTC Block \texttt{\#975458} $3\times 3$ ablation receipt: $93.25\%$ \texttt{KEV-1.0} compression, raising blind 35B score from $1.77$ to $9.67/10$ ($10.23\times$ $\text{ICC}$). \\
+\texttt{prova\_\allowbreak{}treino\_\allowbreak{}dora\_\allowbreak{}...\_\allowbreak{}kev01.json} & $15,592$ & \texttt{783c77..20890d40} & BTC Block \texttt{\#975458} Waves 1--2 \texttt{DoRA+O-LoRA} training receipt ($0.001664$ cross-subspace Frobenius residual). \\
+\texttt{resultado\_\allowbreak{}treino\_\allowbreak{}...\_\allowbreak{}4b.json} & $27,549$ & \texttt{e26141..b1c54691} & BTC Block \texttt{\#975458} step-by-step PyTorch+PEFT autograd consolidation receipt on frozen \texttt{Qwen3.5-4B} (\texttt{NF4}, $28\text{--}31\text{ W}$). \\
+\texttt{veredito\_\allowbreak{}real\_\allowbreak{}juiz\_\allowbreak{}35b\_\allowbreak{}...json} & $2,010$ & \texttt{20b457..61fa4315} & BTC Block \texttt{\#975458} blind adversarial \texttt{Qwen3.5-35B-A3B} (\texttt{llama.cpp}, $22.02\text{ GB}$) evaluation verdict. \\
+\texttt{pre01\_\allowbreak{}semble\_\allowbreak{}prewarm.json} & $1,582$ & \texttt{883e9d..a13ea207} & BTC Block \texttt{\#975458} Windows \texttt{MapViewOfFile} zero-copy \texttt{.mmap} cortical routing pre-warm receipt ($0.015\text{ ms}$). \\
+\texttt{cli\_\allowbreak{}auditar\_\allowbreak{}hardware.json} & $1,280$ & \texttt{f7ee24..e160edf7} & Hardware station baseline telemetry confirming \texttt{RTX 5060 8 GB} (\texttt{sm\_120}) and $64\text{ GB}$ host RAM invariants. \\
+\bottomrule
+\end{tabularx}
+\vspace{2pt}
+{\scriptsize \textsuperscript{*}To preserve exact SHA-256 integrity (\texttt{9a47a690..9da977b61033}) matching Section~6 of the monograph, \texttt{PROVA\_\allowbreak{}LIMITE\_\allowbreak{}RUPTURA\_\allowbreak{}E\_\allowbreak{}BLENDER\_\allowbreak{}AO\_\allowbreak{}VIVO\_\allowbreak{}02.json} is distributed completely unedited; as declared in Section~7.3 of the monograph, the \texttt{ato\_3} GUI viewport showcase block inside that JSON is excluded from neural synthesis claims, and its host-assisted \texttt{.blend}/\texttt{.glb} showcase files are omitted from \texttt{evidence/}.\par}
+\end{table}
+
+\section{Anatomy of the 195-Measurement Matrix and \texorpdfstring{$H_0$ vs.\ $H_1\dots H_k$}{H0 vs. H1..Hk} Definition}
+
+A reader inspecting Table~4 of the main monograph without opening \texttt{ato2\_\allowbreak{}escada\_\allowbreak{}ondas\_\allowbreak{}3\_\allowbreak{}a\_\allowbreak{}10.json} might assume the $10$-wave ladder represents $10$ isolated point evaluations. In reality, at every cumulative wave step $k \in \{1,\dots,10\}$, the evaluation harness executes forward-pass loss and token-level accuracy across \textbf{all $k+1$ hold-out suites} ($H_0, H_1, \dots, H_k$), yielding:
+\begin{equation}
+  N_{\text{regime}} = \sum_{k=1}^{10} (k + 1) = 65 \text{ cells/regime}, \qquad
+  N_{\text{total}} = 3 \times 65 = 195 \text{ empirical cells}
+\end{equation}
+across the three compared regimes (\texttt{matriz\_\allowbreak{}triangular\_\allowbreak{}coluna\_\allowbreak{}monolitica\_\allowbreak{}1\_\allowbreak{}ate\_\allowbreak{}k}, \texttt{matriz\_\allowbreak{}triangular\_\allowbreak{}ld\_\allowbreak{}mole\_\allowbreak{}cluster\_\allowbreak{}subdominio}, and \texttt{matriz\_\allowbreak{}triangular\_\allowbreak{}ld\_\allowbreak{}mole\_\allowbreak{}top2\_\allowbreak{}cirurgico}).
+
+\textbf{Exact Reconciliation of $H_0$ ($82.85\%$) vs.\ Learned-Wave Minimum ($89.91\%$) at $k=4$:}
+In \texttt{curva\_\allowbreak{}comparativa\_\allowbreak{}saturacao\_\allowbreak{}monolitica\_\allowbreak{}vs\_\allowbreak{}ld\_\allowbreak{}mole}, the summary retention curve evaluates the worst-case retention strictly across the \textbf{continually learned specialist waves} $H_1\dots H_k$:
+\begin{equation}
+  R_{\min}^{\text{learned}}(k) = \min_{1 \le j \le k} \frac{\exp(-\mathcal{L}_k(H_j))}{\exp(-\mathcal{L}_j(H_j))}, \qquad
+  A_{\min}^{\text{learned}}(k) = \min_{1 \le j \le k} \frac{\text{Acc}_k(H_j)}{\text{Acc}_j(H_j)}.
+\end{equation}
+Meanwhile, $H_0$ (\texttt{H0\_\allowbreak{}MotorHumano\_\allowbreak{}0150}, baseline $\mathcal{L}_0 = 0.493158$, $\text{Acc}_0 = 0.902184$) serves as the \textbf{unadapted pre-training anchor} and is reported separately in the right-hand structural diagnosis column of Table~4. Inspecting \texttt{onda\_4} inside \texttt{ato2\_\allowbreak{}escada\_\allowbreak{}ondas\_\allowbreak{}3\_\allowbreak{}a\_\allowbreak{}10.json} confirms exact numerical identity with zero discrepancy:
+\begin{itemize}
+  \item \textbf{Pre-training anchor $H_0$ at $k=4$:} $\mathcal{L}_4(H_0) = 0.681319$, $\text{Acc}_4(H_0) = 0.860399 \implies$ token-accuracy retention $95.368\%$ and likelihood retention \textbf{$82.848\%$ ($82.85\%$)}, exactly as noted in Table~4's diagnosis column.
+  \item \textbf{Learned specialist waves $H_1\dots H_4$ at $k=4$:} likelihood retentions are $H_1 = \mathbf{89.905\%}$ ($89.91\%$), $H_2 = 96.691\%$, $H_3 = 89.953\%$, and $H_4 = 93.071\%$ ($\min_{1\le j\le 4} = \mathbf{89.905\%}$); token-accuracy retentions are $H_1 = 98.010\%$, $H_2 = 98.701\%$, $H_3 = \mathbf{96.995\%}$ ($97.00\%$), and $H_4 = 97.697\%$ ($\min_{1\le j\le 4} = \mathbf{96.995\%}$).
+\end{itemize}
+Furthermore, as explicitly pre-registered in Section~8.1 of the monograph (\textbf{H5}), this Stage-1 ladder executed a single fixed wave ordering ($1 \to 10$) under one deterministic seed on an $8\text{ GB}$ consumer GPU; multi-permutation wave orderings ($5$ random seeds) are pre-registered for Stage-2 execution.
+
+\section{Audit of 100\% Solo Neural Synthesis vs.\ Quarantined Host Scripts}
+
+A legitimate skeptical objection to modular adapter routing is that $100.00\%$ retention on frozen cartridges follows naturally from weight isolation unless each isolated cartridge also proves \textbf{generative functional competence} under an external compiler. To answer this directly, \texttt{evidence/solo\_\allowbreak{}model\_\allowbreak{}outputs\_\allowbreak{}waves\_\allowbreak{}3\_\allowbreak{}to\_\allowbreak{}10/} and \texttt{evidence/solo\_\allowbreak{}model\_\allowbreak{}outputs\_\allowbreak{}arena\_\allowbreak{}waves\_\allowbreak{}1\_\allowbreak{}to\_\allowbreak{}2/} publish the exact unedited Python (\texttt{bpy/bmesh}) and Unreal Engine~5 C++20 source files emitted $100\%$ solo by Isaque~2.0, together with both independent headless verification exports (\texttt{exports/} and \texttt{exports\_\allowbreak{}recheck/}).
+
+\begin{table}[!htbp]
+\centering
+\caption{Complete inventory of unassisted Isaque~2.0 neural code outputs and deterministic dual-pass headless verification artifacts.}
+\label{tab:solo}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}llrrY@{}}
+\toprule
+\textbf{Wave / Trial} & \textbf{Solo Model Source File(s)} & \textbf{Bytes} & \textbf{SHA-256} & \textbf{Deterministic Headless Verification Proof} \\
+\midrule
+Arena $H_1$ & \texttt{DESAFIO-01\_\allowbreak{}C/modulo\_\allowbreak{}01\_\allowbreak{}generated.py} & $2,690$ & \texttt{verified} & Headless \texttt{Blender 5.2.1}: $0$ non-manifold edges, valid UV + UCX. \\
+Arena $H_2$ & \texttt{DESAFIO-02\_\allowbreak{}C/InteractionInventory.*} & $4,118$ & \texttt{verified} & \texttt{clang++ -std=c++20} + UHT gate: $8/8$ UE5 memory invariants. \\
+Arena $H_{1+2}$ & \texttt{DESAFIO-03\_\allowbreak{}C/ModularBridgeAsset.*} & $6,412$ & \texttt{verified} & Cross-engine Blender \texttt{.py} + UE5 \texttt{.h/.cpp}: $100\%$ pass. \\
+Wave 3 ($H_3$) & \texttt{onda\_3/onda\_\allowbreak{}3\_\allowbreak{}generated.py} & $3,442$ & \texttt{3f037b0e} & \texttt{Onda3\_Curves.glb} ($37,176\text{ B}$): \texttt{exports}$\,=\,$\texttt{recheck} (\texttt{bb2ea0b8}). \\
+Wave 4 ($H_4$) & \texttt{onda\_4/onda\_\allowbreak{}4\_\allowbreak{}generated.py} & $2,969$ & \texttt{2acff67b} & \texttt{Onda4\_PBR.glb} ($6,624\text{ B}$): \texttt{exports}$\,=\,$\texttt{recheck} (\texttt{13ef4580}). \\
+Wave 5 ($H_5$) & \texttt{onda\_5/onda\_\allowbreak{}5\_\allowbreak{}generated.py} & $1,705$ & \texttt{05ce7074} & Procedural Geometry Nodes industrial catwalk AST + headless pass. \\
+Wave 6 ($H_6$) & \texttt{onda\_6/onda\_\allowbreak{}6\_\allowbreak{}generated.py} & $2,252$ & \texttt{042e67d4} & \texttt{eevee\_stage\_audit.png} ($31,599\text{ B}$): 3-point watt rig + $42\text{ mm}$ DOF. \\
+Wave 7 ($H_7$) & \texttt{onda\_7/onda\_\allowbreak{}7\_\allowbreak{}generated.py} & $1,464$ & \texttt{34f6a6b1} & \texttt{Onda7\_LODs.glb} ($20,180\text{ B}$): \texttt{exports}$\,=\,$\texttt{recheck} (\texttt{bf647059}). \\
+Wave 8 ($H_8$) & \texttt{onda\_8/ReplicatedPressureValve.*} & $2,366$ & \texttt{8ce55efa} & \texttt{clang++ -std=c++20}: \texttt{DOREPLIFETIME} \& \texttt{OnRep} replication pass. \\
+Wave 9 ($H_9$) & \texttt{onda\_9/IndustrialCatwalkHism.*} & $2,167$ & \texttt{78813312} & \texttt{clang++ -std=c++20}: \texttt{UHierarchicalISM} instancing pass. \\
+Wave 10 ($H_{10}$) & \texttt{onda\_10/manifest\_\allowbreak{}blender.py} + C++ & $4,976$ & \texttt{abc3f213} & \texttt{PumpingUnit\_Manifest.glb} ($11,728\text{ B}$, \texttt{3e8e920f}) + C++20 pass. \\
+Staged C++20 & \texttt{KinsmanPumpingStationActor.*} & $3,841$ & \texttt{verified} & Synthesized via sequential adapter switching ($8/8$ UHT/\texttt{clang++}). \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\auditbox{Strict Exclusion of Auxiliary-Agent GUI Showcases (\texttt{R-VERDADE-OU-AJUDA})}{During exploratory live-screen sessions, an auxiliary orchestration agent wrote host-side Python viewport wrappers (\texttt{construir\_\allowbreak{}ao\_\allowbreak{}vivo\_\allowbreak{}na\_\allowbreak{}tela.py} and \texttt{Refinaria-\allowbreak{}Kinsman-\allowbreak{}Ao-\allowbreak{}Vivo-01}) to assemble a multi-unit refinery scene on screen. Those host-scripted files (\texttt{planta\_\allowbreak{}industrial\_\allowbreak{}kinsman\_\allowbreak{}ao\_\allowbreak{}vivo.blend}, \texttt{planta\_\allowbreak{}industrial\_\allowbreak{}kinsman.glb}, and \texttt{render\_\allowbreak{}planta\_\allowbreak{}ao\_\allowbreak{}vivo.png}) are \textbf{100\% excluded from this evidence archive} so that every single geometry and source artifact inside \texttt{evidence/solo\_\allowbreak{}model\_\allowbreak{}outputs\_*} reflects pure, unassisted Isaque~2.0 token synthesis.}
+
+\section{Why Authentic Failures and Boundary Collisions Refute Forgery}
+
+Fabricated or cherry-picked benchmarks report uniform success while hiding structural breakdowns. By contrast, three unaltered negative/boundary artifacts included in \texttt{evidence/} expose exact machine-level failure signatures that directly motivated Isaque~2.0's architectural laws:
+
+\begin{enumerate}
+  \item \textbf{Out-of-Distribution Blind Failure (\texttt{DESAFIO-04\_\allowbreak{}C} \& \texttt{ato1\_\allowbreak{}desafio04\_\allowbreak{}cego.json}):} Evaluated ``hands-behind-back'' prior to Wave~3--10 expansion ($93.3\%$ \texttt{KEV-1.0} compression from $7,180$ to $481$ tokens), Isaque~2.0 achieved $7/8$ UE5 C++20 invariants but failed \texttt{inv\_\allowbreak{}08\_\allowbreak{}clang\_\allowbreak{}cpp20\_\allowbreak{}fsyntax\_\allowbreak{}only} at line~35 of \texttt{IndustrialStationNodeActor.cpp} by calling \texttt{IsValid(const FIndustrialStationNodeRow*)}---an Unreal macro valid only for \texttt{UObject*}, not \texttt{USTRUCT*}---and omitted three unseen ramp sockets (\texttt{Socket\_\allowbreak{}Pipe\_\allowbreak{}In/Out/Walkway\_\allowbreak{}Link}) absent from the v1 \texttt{.mmap} index. Replacing \texttt{!IsValid(Row)} with \texttt{Row == nullptr} in isolated diagnostic check \texttt{ato1\_\allowbreak{}promocao\_\allowbreak{}e\_\allowbreak{}precheck\_\allowbreak{}ondas3\_\allowbreak{}10.json} immediately restored $8/8$ C++20 compilation, proving genuine neural synthesis at the exact boundary of its domain anchor.
+  \item \textbf{Token-by-Token Multi-Adapter AST Collision (\texttt{FUSAO\_\allowbreak{}2\_\allowbreak{}ONDAS\_\allowbreak{}1\_\allowbreak{}3\_\allowbreak{}pass2.py}):} When Wave~1 (\texttt{bmesh} solids) and Wave~3 (\texttt{BEZIER} pipes + sockets) were blended simultaneously token-by-token on the $4\text{B}$ trunk ($1,471$ tokens, $2,160.518\text{ s}$), line~58 emitted the hybrid statement \texttt{s\_\allowbreak{}out.parent = onda\_\allowbreak{}3 := make\_\allowbreak{}bmesh\_\allowbreak{}solid(...)}, triggering a deterministic Python \texttt{SyntaxError}. Preserving both \texttt{pass1.py} and \texttt{pass2.py} verbatim in \texttt{evidence/negative\_\allowbreak{}probe\_\allowbreak{}token\_\allowbreak{}fusion\_\allowbreak{}collision/} demonstrates why simultaneous logit addition corrupts formal language grammars and why \textbf{Staged Modular DAG Composition} ($1$ specialist cartridge per stage) is mandatory.
+  \item \textbf{Progressive Rank-16 Subspace Collapse (\texttt{ato2\_\allowbreak{}escada\_\allowbreak{}ondas\_\allowbreak{}3\_\allowbreak{}a\_\allowbreak{}10.json}):} Rather than an artificial step function, the monolithic baseline exhibits smooth Frobenius subspace crushing from $k=2$ ($100.00\%$) through $k=3$ ($98.508\%$ acc / $92.870\%$ lik.), $k=4$ ($96.995\%$ / $89.905\%$), $k=6$ ($90.499\%$ / $66.462\%$), down to $k=10$ ($75.309\%$ acc / $31.372\%$ lik., where Wave~6 evaluation loss degrades from $0.0393$ to $1.199$), empirically pinning the \textbf{3-Wave Cartridge Ceiling}.
+\end{enumerate}
+
+\end{document}

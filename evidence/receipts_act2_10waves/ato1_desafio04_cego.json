@@ -1,0 +1,173 @@
+{
+  "schema": "abraao.isaque.ato1_desafio04_mao_para_tras/1.0",
+  "timestamp_utc": "2026-11-11T16:27:27Z",
+  "zero_edicao_previa_comprovada_sha256": true,
+  "sha256_arquivos_congelados_antes": {
+    "arena_kev_triplo_mmap": "fe52e603352df891147e4513a307cbecd8a127cb6946198799baf36a411cff2d",
+    "construir_arena_script": "55fe801fca4e3898c98905c6747c19a6d46663a25b12f940746a7dff38a730e6",
+    "executar_arena_script": "29d562894884c8fc9dbbfd7a8f823cac89a1d7e6b172713c4785ec02ef6705e3",
+    "verificador_blender": "b98783bb4e726e3ae46c9c08df1727490bb8bab75612b4b7607d59de97812b90",
+    "verificador_ue5_exe": "6ab074a359281a55c16976f2c2485b4cde60fc4603adcf9dc4d2b54af36092c7",
+    "onda1_safetensors": "ea4721da6eb08b466dc7d59432c542f1a8fee63930fa0b00132854c09108089b",
+    "onda2_safetensors": "f08572ad957264c03c066a7ac3fc9f25a0cb1c7db66701dafa890c02003af79f",
+    "onda1_gguf": "9a40d947801f2b1736cb6638249542224770a93c60701b939ed3e9be52e2d61b",
+    "onda2_gguf": "35dbb9d4703c26804cb5538e0f796d60992a3b3fbb15c03c64e9661c02d8f83e",
+    "acumulado_o1_o2_gguf": "8dabdc59643e8785a1a8863e259050f904df445c73c5b5519e9fdf36129a000e"
+  },
+  "sha256_arquivos_congelados_depois": {
+    "arena_kev_triplo_mmap": "fe52e603352df891147e4513a307cbecd8a127cb6946198799baf36a411cff2d",
+    "construir_arena_script": "55fe801fca4e3898c98905c6747c19a6d46663a25b12f940746a7dff38a730e6",
+    "executar_arena_script": "29d562894884c8fc9dbbfd7a8f823cac89a1d7e6b172713c4785ec02ef6705e3",
+    "verificador_blender": "b98783bb4e726e3ae46c9c08df1727490bb8bab75612b4b7607d59de97812b90",
+    "verificador_ue5_exe": "6ab074a359281a55c16976f2c2485b4cde60fc4603adcf9dc4d2b54af36092c7",
+    "onda1_safetensors": "ea4721da6eb08b466dc7d59432c542f1a8fee63930fa0b00132854c09108089b",
+    "onda2_safetensors": "f08572ad957264c03c066a7ac3fc9f25a0cb1c7db66701dafa890c02003af79f",
+    "onda1_gguf": "9a40d947801f2b1736cb6638249542224770a93c60701b939ed3e9be52e2d61b",
+    "onda2_gguf": "35dbb9d4703c26804cb5538e0f796d60992a3b3fbb15c03c64e9661c02d8f83e",
+    "acumulado_o1_o2_gguf": "8dabdc59643e8785a1a8863e259050f904df445c73c5b5519e9fdf36129a000e"
+  },
+  "desafio_04_surpresa": {
+    "id": "DESAFIO-04",
+    "domain": "BRIDGE_3D",
+    "target": "IndustrialStationNodeActor",
+    "tokens_entrada_bruta": 7180,
+    "pacote_kev_emitido": "KEV/1.0 domain=BRIDGE_3D target=IndustrialStationNodeActor\n@SPACE{unit=METRIC;scale=1.0;up=Z;size_x=5.0;size_y=2.2;size_z=3.2;pivot_z_min=0.0;manifold=true;collider=UCX_Estacao_01}\n@GRAPH[\n  S1:BMESH.init_metric_scene(scale=1.0,empty=true) -> S2\n  S2:BMESH.create_cube_and_inset(size_x=5.0,size_y=2.2,size_z=3.2,z_min=0.0,ribs=2) -> S3\n  S3:BMESH.loops_uv_verify_grid(outward=true,mesh=Estacao_01) -> S4\n  S4:BMESH.convex_hull_collider(name=UCX_Estacao_01,manifold=true) -> S5\n  S5:UHT.header_order_last_include(gen_hlsl=true,last_inc=HeaderStem.generated.h) -> S6\n  S6:UHT.delegates_and_struct(multicast=true,tick=false,scale_m=1.0,scale_cm=100.0)\n]\n@GUARD[\n  !SCALE-1M-100CM: Multiplicar dimensoes em metros pelo 100 para validar AABB em centimetros no UE5 (ex: 5.0m -> 500.0cm, +-2%)\n  !MANIFOLD-0EDGES: Garantir non_manifold_edges==0 e zero_area_faces==0 na malha principal Estacao_01 do Blender\n  !PIVOT-ORIGIN-Z0: Colisor UCX_Estacao_01 origin em (0,0,0) e base apoiada em Z_min=0.0 dentro de +-2% da AABB\n]\n@VERIFY[\n  ?non_manifold_edges==0\n  ?zero_area_faces==0\n  ?unit_scale_meters==1.0\n  ?meter_to_cm==100.0\n  ?bbox_tol_pct<=2.0\n]",
+    "tokens_pacote_entregue": 481,
+    "compressao_pct": 93.3,
+    "latencia_emissao_s": 21.234,
+    "mmap_lookup_ms": 0.269,
+    "vram_pico_emissao_mib": 5300,
+    "pass_at_1_desafio": false,
+    "pass_at_loop_desafio": false,
+    "verificadores_pass_at_1": "0/2",
+    "verificadores_pass_at_loop": "0/2",
+    "execucao_fisica": {
+      "aprovado_pass_1_desafio": false,
+      "aprovado_mecanico_desafio": false,
+      "verificadores_acionados": 2,
+      "verificadores_aprovados_pass_1": 0,
+      "verificadores_aprovados": 0,
+      "latencia_sintese_executor_s": 144.419,
+      "vram_pico_executor_mib": 5368,
+      "recibo_blender": {
+        "schema": "isaque.kev01.verificador_fisico_blender/1.0",
+        "blender_version": "5.2.1 LTS",
+        "script_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-04_C\\industrialstationnodeactor_generated.py",
+        "aprovado_mecanico": false,
+        "exit_code": 1,
+        "zero_traceback": false,
+        "traceback": "Traceback (most recent call last):\n  File \"D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\temp\\blender_audit__ee7j82h\\_inner_bmesh_audit.py\", line 33, in <module>\n    runpy.run_path(str(target_script), run_name=\"__main__\")\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-04_C\\industrialstationnodeactor_generated.py\", line 30, in <module>\n    lp[uv_layer].uv = quad[li2 % 4]\n    ~~^^^^^^^^^^\nTypeError: 'int' object is not subscriptable\n",
+        "unit_system": "METRIC",
+        "unit_scale": 1.0,
+        "non_manifold_edges": 0,
+        "non_manifold_edges_ucx": 0,
+        "zero_area_faces": 0,
+        "normals_consistent": false,
+        "uv_unwrapped_valid": false,
+        "pivot_z_min_aligned": false,
+        "primary_origin_m": [
+          999.0,
+          999.0,
+          999.0
+        ],
+        "bounding_box_min_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bounding_box_max_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bounding_box_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "expected_bbox_m": [
+          5.0,
+          2.2,
+          3.2
+        ],
+        "bbox_error_pct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bbox_within_2pct": false,
+        "visual_meshes": [],
+        "ucx_colliders": [],
+        "sockets": [],
+        "exported_files": [],
+        "headless_workbench_render_ok": false,
+        "headless_workbench_preview": null,
+        "violacoes": [
+          "EXECUCAO_FALHOU: exit=1 traceback=^^^^\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-04_C\\industrialstationnodeactor_generated.py\", line 30, in <module>\n    lp[uv_layer].uv = quad[li2 % 4]\n    ~~^^^^^^^^^^\nTypeError: 'int' object is not subscriptable\n",
+          "VARIACOES_INSUFICIENTES: esperado >= 2 malhas visuais, obteve 0",
+          "UCX_INVALIDO: ucx_count=0, non_manifold_ucx=0",
+          "NORMAIS_INCONSISTENTES: volume assinado <= 0 ou normais degeneradas",
+          "PIVOT_DESALINHADO: origin=[999.0, 999.0, 999.0], bbox_min=[0.0, 0.0, 0.0] (exigido pivô (0,0,0) e Z_min=0)",
+          "BOUNDING_BOX_FORA_DE_2PCT: medido=[0.0, 0.0, 0.0] vs esperado=[5.0, 2.2, 3.2] (erro_pct=[0.0, 0.0, 0.0])",
+          "UV_AUSENTE_OU_DEGENERADA: malha visual sem UV válida",
+          "SOCKETS_AUSENTES: requeridos=['Socket_Pipe_In', 'Socket_Pipe_Out', 'Socket_Walkway_Link'], encontrados=[]",
+          "EXPORT_GLB_FBX_AUSENTE: nenhum arquivo .glb/.fbx válido gravado em disco"
+        ],
+        "blender_cli_returncode": 0,
+        "latencia_verificacao_s": 0.89,
+        "tentativas_loop": 3,
+        "aprovado_pass_1": false
+      },
+      "recibo_ue5_cpp": {
+        "schema": "isaque.kev01.verificador_fisico_ue5_cpp/1.0",
+        "header_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-04_C\\IndustrialStationNodeActor.h",
+        "source_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-04_C\\IndustrialStationNodeActor.cpp",
+        "aprovado_mecanico": false,
+        "invariantes_8_de_8": {
+          "inv_01_pragma_once": true,
+          "inv_02_generated_h_ultimo_include": true,
+          "inv_03_uclass_ou_ustruct_presente": true,
+          "inv_04_generated_body_pareado": true,
+          "inv_05_zero_ponteiro_uobject_cru_sem_gc": true,
+          "inv_06_zero_new_bruto_em_uobject": true,
+          "inv_07_ciclo_vida_e_macros_ue5_validos": true,
+          "inv_08_clang_cpp20_fsyntax_only_zero_erros": false
+        },
+        "violacoes": [
+          "INV-08: clang++ -fsyntax-only -std=c++20 retornou exit=1: D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-04_C\\IndustrialStationNodeActor.cpp:35:10: error: no matching function for call to 'IsValid'\r\n   35 |     if (!IsValid(Row) || !IsValid(Row->StationMesh.Get())) {\r\n      |          ^~~~~~~\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\temp\\ue5_stub_cdd88644ffa0_9832\\CoreMinimal.h:343:13: note: candidate function not viable: no known conversion from 'const FIndustrialStationNodeRow *' to 'const UObject *' for 1st argument\r\n  343 | inline bool IsValid(const UObject* Test) { return Test != nullptr; }\r\n      |             ^       ~~~~~~~~~~~~~~~~~~~\r\n1 error generated."
+        ],
+        "ast_telemetria": {
+          "header_ast_errors": 17,
+          "source_ast_errors": 0,
+          "includes_header_ordem": [
+            "CoreMinimal.h",
+            "Engine/DataTable.h",
+            "Components/StaticMeshComponent.h",
+            "GameFramework/Actor.h",
+            "IndustrialStationNodeActor.generated.h"
+          ],
+          "tipos_refletidos": [
+            "USTRUCT:FIndustrialStationNodeRow",
+            "UCLASS:AIndustrialStationNodeActor"
+          ],
+          "membros_uobject_auditados": 5,
+          "ponteiros_crus_uobject_violadores": [],
+          "new_bruto_uobject_violadores": [],
+          "ufunctions_detectadas": 2,
+          "uproperties_detectadas": 10
+        },
+        "clang_cpp20": {
+          "binario": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\x64\\bin\\clang++.exe",
+          "exit_code": 1,
+          "zero_erros_sintaxe": false,
+          "stderr_diagnostico": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-04_C\\IndustrialStationNodeActor.cpp:35:10: error: no matching function for call to 'IsValid'\r\n   35 |     if (!IsValid(Row) || !IsValid(Row->StationMesh.Get())) {\r\n      |          ^~~~~~~\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\temp\\ue5_stub_cdd88644ffa0_9832\\CoreMinimal.h:343:13: note: candidate function not viable: no known conversion from 'const FIndustrialStationNodeRow *' to 'const UObject *' for 1st argument\r\n  343 | inline bool IsValid(const UObject* Test) { return Test != nullptr; }\r\n      |             ^       ~~~~~~~~~~~~~~~~~~~\r\n1 error generated."
+        },
+        "tentativas_loop": 3,
+        "aprovado_pass_1": false
+      }
+    }
+  },
+  "promocao_catalogo_colunas_corticais": null,
+  "compute_procs_ativos_pos_ato1": 0,
+  "tempo_total_ato1_s": 178.818
+}

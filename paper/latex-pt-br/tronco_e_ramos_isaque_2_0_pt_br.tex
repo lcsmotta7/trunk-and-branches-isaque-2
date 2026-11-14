@@ -468,7 +468,7 @@ Para determinar quantas habilidades ortogonais sequenciais cabem em um adaptador
 \begin{figure}[!htbp]
   \centering
   \includegraphics[width=\linewidth]{fig4_rupture_10ondas_pt.pdf}
-  \caption{Lei emp\'irica de satura\c{c}\~ao e ruptura em aprendizado cont\'inuo ao longo de $10$ ondas sequenciais ($H_0\dots H_{10}$). \textbf{(a)} Reten\c{c}\~ao m\'inima sobre todas as ondas anteriores $H_{0\dots k-1}$ em fun\c{c}\~ao da onda cumulativa $k$: o ac\'umulo monol\'itico inicia ruptura em $k=3$ ($98,51\%$ acur\'acia de tokens, $92,87\%$ verossimilhan\c{c}a) e colapsa para \textbf{$75,31\%$ de acur\'acia ($31,37\%$ de verossimilhan\c{c}a)} em $k=10$, enquanto o \texttt{LD-MoLE Top-2} cir\'urgico mant\'em \textbf{$100,00\%$ de reten\c{c}\~ao nas $10$ ondas}. \textbf{(b)} Reten\c{c}\~ao por dom\'inio nos $11$ conjuntos hold-out ($H_0\dots H_{10}$) ap\'os concluir a Onda~$10$.}
+  \caption{Lei emp\'irica de satura\c{c}\~ao e ruptura em aprendizado cont\'inuo ao longo de $10$ ondas sequenciais ($H_0\dots H_{10}$). \textbf{(a)} Reten\c{c}\~ao m\'inima sobre as ondas aprendidas $H_{1\dots k}$ em fun\c{c}\~ao da onda cumulativa $k$: o ac\'umulo monol\'itico inicia ruptura em $k=3$ ($98,51\%$ acur\'acia de tokens, $92,87\%$ verossimilhan\c{c}a) e colapsa para \textbf{$75,31\%$ de acur\'acia ($31,37\%$ de verossimilhan\c{c}a)} em $k=10$, enquanto o \texttt{LD-MoLE Top-2} cir\'urgico mant\'em \textbf{$100,00\%$ de reten\c{c}\~ao nas $10$ ondas}. \textbf{(b)} Reten\c{c}\~ao por dom\'inio nos $11$ conjuntos hold-out ($H_0\dots H_{10}$) ap\'os concluir a Onda~$10$.}
   \label{fig:rupture}
 \end{figure}
 
@@ -513,7 +513,7 @@ $k=10$ & $\mathbf{75,31\%}$ & $\mathbf{31,37\%}$ & $95,49\%$ & $80,69\%$ & $\mat
 \bottomrule
 \end{tabularx}
 \vspace{2pt}
-{\scriptsize \textsuperscript{\dag}A reten\c{c}\~ao de verossimilhan\c{c}a \'e definida pela raz\~ao $\min_{j < k} \exp(-\mathcal{L}_k(H_j)) / \exp(-\mathcal{L}_j(H_j))$; valores levemente acima de $100,00\%$ ($100,08\%$ em $k=2$) refletem transfer\^encia reversa positiva benigna ($\mathcal{L}_2(H_1) < \mathcal{L}_1(H_1)$ \cite{lopezpaz2017gem}) antes da satura\c{c}\~ao do posto~$16$.\par}
+{\scriptsize \textsuperscript{\dag}Os m\'inimos da Parte~B avaliam as ondas aprendidas $H_1\dots H_k$ ($\min_{1 \le j \le k} \exp(-\mathcal{L}_k(H_j)) / \exp(-\mathcal{L}_j(H_j))$, ex.: $89,91\%$ [$89,905\%$] em $H_1$ e $97,00\%$ [$96,995\%$] de acur\'acia em $H_3$ em $k=4$), enquanto a base pr\'e-treino $H_0$ consta na coluna de diagn\'ostico ($82,85\%$ em $k=4$); $100,08\%$ em $k=2$ reflete transfer\^encia reversa positiva \cite{lopezpaz2017gem}. As $195$ medi\c{c}\~oes ($3\times 65$) e sa\'idas puras constam no anexo \texttt{evidence/}.\par}
 \end{table}
 
 \subsection{Teorema da Colis\~ao Sint\'atica por Fus\~ao Token a Token e S\'intese Neural Pura}

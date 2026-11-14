@@ -471,7 +471,7 @@ To determine how many sequential orthogonal skills can accumulate inside a rank-
 \begin{figure}[!htbp]
   \centering
   \includegraphics[width=\linewidth]{fig4_rupture_10waves_matrix.pdf}
-  \caption{Empirical continual-learning saturation and rupture law across $10$ sequential specialization waves ($H_0\dots H_{10}$). \textbf{(a)} Minimum retention across all previously learned waves $H_{0\dots k-1}$ as a function of cumulative wave $k$: monolithic accumulation ruptures at $k=3$ ($98.51\%$ token accuracy, $92.87\%$ likelihood retention) and collapses to \textbf{$75.31\%$ token accuracy ($31.37\%$ likelihood retention)} by $k=10$, whereas surgical \texttt{LD-MoLE Top-2} maintains \textbf{$100.00\%$ retention across all $10$ waves}. \textbf{(b)} Per-domain token accuracy retention across all $11$ hold-out sets ($H_0\dots H_{10}$) after completing Wave $10$.}
+  \caption{Empirical continual-learning saturation and rupture law across $10$ sequential specialization waves ($H_0\dots H_{10}$). \textbf{(a)} Minimum retention across continually learned waves $H_{1\dots k}$ as a function of cumulative wave $k$: monolithic accumulation ruptures at $k=3$ ($98.51\%$ token accuracy, $92.87\%$ likelihood retention) and collapses to \textbf{$75.31\%$ token accuracy ($31.37\%$ likelihood retention)} by $k=10$, whereas surgical \texttt{LD-MoLE Top-2} maintains \textbf{$100.00\%$ retention across all $10$ waves}. \textbf{(b)} Per-domain token accuracy retention across all $11$ hold-out sets ($H_0\dots H_{10}$) after completing Wave $10$.}
   \label{fig:rupture}
 \end{figure}
 
@@ -516,7 +516,7 @@ $k=10$ & $\mathbf{75.31\%}$ & $\mathbf{31.37\%}$ & $95.49\%$ & $80.69\%$ & $\mat
 \bottomrule
 \end{tabularx}
 \vspace{2pt}
-{\scriptsize \textsuperscript{\dag}Likelihood retention is defined as the sequence probability ratio $\min_{j < k} \exp(-\mathcal{L}_k(H_j)) / \exp(-\mathcal{L}_j(H_j))$; values slightly exceeding $100.00\%$ ($100.08\%$ at $k=2$) reflect benign positive backward transfer ($\mathcal{L}_2(H_1) < \mathcal{L}_1(H_1)$ \cite{lopezpaz2017gem}) before rank-$16$ capacity saturates.\par}
+{\scriptsize \textsuperscript{\dag}Part~B summary minima evaluate continually learned waves $H_1\dots H_k$ ($\min_{1 \le j \le k} \exp(-\mathcal{L}_k(H_j)) / \exp(-\mathcal{L}_j(H_j))$, e.g., $89.91\%$ [$89.905\%$] on $H_1$ and $97.00\%$ [$96.995\%$] acc.\ on $H_3$ at $k=4$), while pre-training base anchor $H_0$ is tracked separately in the diagnosis column ($82.85\%$ likelihood at $k=4$); $100.08\%$ at $k=2$ reflects positive backward transfer \cite{lopezpaz2017gem}. All $195$ matrix cells ($3\times 65$) and solo wave outputs are archived in \texttt{evidence/}.\par}
 \end{table}
 
 \subsection{The Token-by-Token Fusion Interference Theorem and Pure Neural Wave Synthesis}

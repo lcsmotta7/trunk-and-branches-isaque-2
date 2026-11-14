@@ -1,0 +1,34 @@
+{
+  "schema": "isaque.kev01.pre01_semble_prewarm/1.0",
+  "sandbox_binary": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\bin\\ecosystem-daemon-pre01.exe",
+  "producao_abraao_bin_intocada": true,
+  "socket_bind_nonblocking_ms": 1028.18,
+  "cold_without_prewarm": {
+    "ok": true,
+    "handshake_initialize_ms": 8.794,
+    "mcp_roundtrip_total_ms": 5759.681,
+    "daemon_semble_internal_ms": 5728.642,
+    "engine_used": "ecosystem-rust-daemon-ram",
+    "preview": [
+      "onde esta: \"ControladorPulsoEfemeroIsaque\" (5.728642s)",
+      "1. Ferramentas/Abraao-Core-0150/crates/pulso_efemero_isaque/src/lib.rs :: linhas 674-696 [arquivo]",
+      "   read_file(relative_path='Ferramentas/Abraao-Core-0150/crates/pulso_efemero_isaque/src/lib.rs', start_line=673, end_line=695)"
+    ]
+  },
+  "background_async_prewarm_telemetry": {},
+  "first_localizar_after_prewarm": {
+    "ok": true,
+    "handshake_initialize_ms": 7.083,
+    "mcp_roundtrip_total_ms": 33.553,
+    "daemon_semble_internal_ms": 3.92,
+    "engine_used": "ecosystem-rust-daemon-ram",
+    "preview": [
+      "onde esta: \"executar_pulso_efemero_isaque\" (0.00392s)",
+      "1. Ferramentas/Abraao-Core-0150/crates/ecosystem-bundle/Ferramentas/Ecosystem-Rust/src/launcher.rs :: linhas 826-837 [arquivo]",
+      "   read_file(relative_path='Ferramentas/Abraao-Core-0150/crates/ecosystem-bundle/Ferramentas/Ecosystem-Rust/src/launcher.rs', start_line=825, end_line=836)"
+    ]
+  },
+  "semble_first_call_ms": 3.92,
+  "mcp_gated_roundtrip_ms": 33.553,
+  "criterio_aceite_menor_150ms": true
+}

@@ -1,0 +1,86 @@
+{
+  "schema": "abraao.isaque.precheck_ondas3_10_e_promocao_kev1/1.0",
+  "todos_8_gabaritos_ondas_3_a_10_aprovados": true,
+  "resultados_precheck": {
+    "onda_3": {
+      "aprovado_fisico": true,
+      "violacoes": [],
+      "latencia_s": 0.767
+    },
+    "onda_4": {
+      "aprovado_fisico": true,
+      "violacoes": [],
+      "latencia_s": 0.751
+    },
+    "onda_5": {
+      "aprovado_fisico": true,
+      "violacoes": [],
+      "latencia_s": 0.632
+    },
+    "onda_6": {
+      "aprovado_fisico": true,
+      "violacoes": [],
+      "latencia_s": 1.623
+    },
+    "onda_7": {
+      "aprovado_fisico": true,
+      "violacoes": [],
+      "latencia_s": 0.856
+    },
+    "onda_8": {
+      "aprovado_fisico": true,
+      "violacoes": []
+    },
+    "onda_9": {
+      "aprovado_fisico": true,
+      "violacoes": []
+    },
+    "onda_10": {
+      "aprovado_fisico": true,
+      "violacoes_blender": [],
+      "violacoes_ue5": []
+    }
+  },
+  "diagnostico_cirurgico_desafio04_cpp": {
+    "nota": "Comprovação diagnóstica isolada (sem alterar DESAFIO-04_C nem ato1_desafio04_cego.json): substituir `!IsValid(Row)` por `Row == nullptr` faz o C++20 gerado pelas Ondas 1+2 passar 8/8!",
+    "aprovado_8_de_8_pos_guarda_pontual": true,
+    "violacoes": []
+  },
+  "promocao_base_kev_1_0_colunas_corticais": {
+    "manifesto_path": "D:\\Beyond Adonai\\Isaque\\modelos\\colunas_corticais\\catalogo_kev_1_0_promovido.json",
+    "arquivos": [
+      {
+        "origem": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\pesos\\lab-mh-blender-bridge.safetensors",
+        "destino_catalogo_oficial": "D:\\Beyond Adonai\\Isaque\\modelos\\colunas_corticais\\coluna-mh-03-kev-blender-bridge.safetensors",
+        "bytes": 115875232,
+        "sha256": "ea4721da6eb08b466dc7d59432c542f1a8fee63930fa0b00132854c09108089b"
+      },
+      {
+        "origem": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\pesos\\lab-mh-ue5-kev.safetensors",
+        "destino_catalogo_oficial": "D:\\Beyond Adonai\\Isaque\\modelos\\colunas_corticais\\coluna-mh-04-kev-ue5-cpp.safetensors",
+        "bytes": 115875240,
+        "sha256": "f08572ad957264c03c066a7ac3fc9f25a0cb1c7db66701dafa890c02003af79f"
+      },
+      {
+        "origem": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\pesos\\lab-mh-blender-bridge.gguf",
+        "destino_catalogo_oficial": "D:\\Beyond Adonai\\Isaque\\modelos\\colunas_corticais\\mh-03-kev-blender-bridge-lora.gguf",
+        "bytes": 111697568,
+        "sha256": "9a40d947801f2b1736cb6638249542224770a93c60701b939ed3e9be52e2d61b"
+      },
+      {
+        "origem": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\pesos\\lab-mh-ue5-kev.gguf",
+        "destino_catalogo_oficial": "D:\\Beyond Adonai\\Isaque\\modelos\\colunas_corticais\\mh-04-kev-ue5-cpp-lora.gguf",
+        "bytes": 111697568,
+        "sha256": "35dbb9d4703c26804cb5538e0f796d60992a3b3fbb15c03c64e9661c02d8f83e"
+      },
+      {
+        "origem": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\pesos\\lab-mh-kev-acumulado-o1-o2.gguf",
+        "destino_catalogo_oficial": "D:\\Beyond Adonai\\Isaque\\modelos\\colunas_corticais\\mh-05-kev-acumulado-o1-o2-lora.gguf",
+        "bytes": 223370912,
+        "sha256": "8dabdc59643e8785a1a8863e259050f904df445c73c5b5519e9fdf36129a000e"
+      }
+    ]
+  },
+  "arquivos_congelados_ato1_intactos": true,
+  "tempo_s": 9.267
+}

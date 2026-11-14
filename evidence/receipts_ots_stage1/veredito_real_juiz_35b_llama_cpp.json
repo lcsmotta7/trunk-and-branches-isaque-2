@@ -1,0 +1,9 @@
+{
+  "comando_executado": "D:\\Beyond Adonai\\Isaque\\bin\\llama-completion.exe -m D:\\Beyond Adonai\\Isaque\\modelos\\qwen3.5-35b-a3b\\Qwen3.5-35B-A3B-Q4_K_M.gguf -ngl 99 --cpu-moe -c 2048 -n 450 --temp 0.2 --no-display-prompt -no-cnv -f D:\\Beyond Adonai\\Isaque\\cache\\tmp\\prompt_juiz_35b.txt",
+  "tamanho_gguf_35b_bytes": 22016023168,
+  "tempo_total_wall_clock_s": 24.795,
+  "velocidade_prompt_eval_tok_s": 74.06,
+  "velocidade_decode_juiz_35b_tok_s": 25.66,
+  "parecer_completo_palavra_por_palavra": "O modelo pré-treino falha completamente na tarefa, gerando alucinações sobre \"protocolo Abraão\" e \"invariante R-ZERO\", ignorando os 4 estágios solicitados. A resposta é incompleta e tecnicamente irrelevante.\n\nO modelo pós-treino (LoRA) identifica corretamente a estrutura de 4 estágios, citando APIs específicas (SetProcessWorkingSetSizeEx, VirtualLock, CreateFileMappingW). Contudo, apresenta imprecisões críticas: o Estágio 2 descreve \"VirtualLock sobre SSD\" (VirtualLock opera em RAM, não em disco persistente), e o Estágio 3 menciona \"sem criar VACBs\" (impreciso para operações de arquivo direto). O Estágio 4 está truncado, omitindo a função `DiscardVirtualMemory` solicitada. Não há evidência de colagem de subpalavras; a sintaxe é limpa.\n\nA evolução demonstra ganho na capacidade de seguir instruções estruturais, mas a precisão técnica das APIs de baixo nível permanece comprometida por conceitos físicos incorretos (memória vs. disco).\n\nNota Antes: 1\nNota Depois: 6 [end of text]",
+  "stderr_telemetria_llama_cpp": "0.22.558.456 I common_perf_print:        load time =    2847.57 ms\n0.22.558.458 I common_perf_print: prompt eval time =    8965.39 ms /   664 tokens (   13.50 ms per token,    74.06 tokens per second)\n0.22.558.459 I common_perf_print:        eval time =   10015.21 ms /   257 runs   (   38.97 ms per token,    25.66 tokens per second)\n0.22.558.460 I common_perf_print:       total time =   19081.81 ms /   921 tokens"
+}

@@ -1,0 +1,165 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,margin=18mm,top=20mm,bottom=21mm,headheight=14pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathpazo}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,tabularx,array}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{microtype}
+\usepackage{caption}
+\usepackage[colorlinks=true,linkcolor=primary,citecolor=tealaccent,urlcolor=primary,
+  pdftitle={Anexo Forense de Evidencias e Recibos Brutos -- Tronco e Ramos (Isaque 2.0)},
+  pdfauthor={Lucas Alves Motta (ORCID: 0009-0001-3081-5505)},
+  pdfsubject={Recibos Empiricos, Matrizes Triangulares de 195 Medicoes, Saidas Puras do Modelo e Provas Reais de Fronteira -- DOI: 10.5281/zenodo.24221509}]{hyperref}
+
+\definecolor{primary}{RGB}{22,50,79}
+\definecolor{tealaccent}{RGB}{27,127,121}
+\definecolor{goldaccent}{RGB}{175,118,16}
+\definecolor{calloutbg}{RGB}{244,248,251}
+\definecolor{warmbg}{RGB}{253,249,240}
+\definecolor{slate}{RGB}{82,96,109}
+
+\setlength{\parskip}{5.2pt plus 1.8pt minus 1pt}
+\setlength{\parindent}{0pt}
+\renewcommand{\arraystretch}{1.18}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\emergencystretch=3em
+\captionsetup{font=small,labelfont={bf,color=primary},skip=5pt}
+\renewcommand{\tablename}{Tabela}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\color{slate}\textit{Anexo Forense de Evid\^encias e Recibos Brutos --- Tronco e Ramos (Isaque 2.0)}}
+\fancyhead[R]{\footnotesize\color{slate}\textit{Motta (2026)}}
+\fancyfoot[L]{\footnotesize\color{slate}\textit{Anexo Oficial de \href{https://doi.org/10.5281/zenodo.24221509}{\texttt{DOI:\,10.5281/zenodo.24221509}} $\cdot$ Arquivo Aberto de Provas (\texttt{evidence/})}}
+\fancyfoot[R]{\footnotesize\color{primary}\textbf{A-\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.3pt}
+
+\newcommand{\insightbox}[2]{%
+  \vspace{4pt}\noindent\fcolorbox{primary!45}{calloutbg}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+      \vspace{3pt}\textbf{\color{primary}#1.}\hspace{0.4em}#2\vspace{3pt}%
+    }%
+  }\vspace{4pt}%
+}
+
+\newcommand{\auditbox}[2]{%
+  \vspace{4pt}\noindent\fcolorbox{goldaccent!70}{warmbg}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+      \vspace{3pt}\textbf{\color{goldaccent!90!black}#1.}\hspace{0.4em}#2\vspace{3pt}%
+    }%
+  }\vspace{4pt}%
+}
+
+\begin{document}
+
+\begin{center}
+  {\footnotesize\bfseries\color{tealaccent}ANEXO SUPLEMENTAR OFICIAL DE EVID\^ENCIAS FORENSES E REPRODUTIBILIDADE $\cdot$ NOVEMBRO 2026}\\[5pt]
+  {\LARGE\bfseries\color{primary}Recibos Emp\'iricos Brutos, Matrizes de 195 Medi\c{c}\~oes,\\[2pt]
+  Sa\'idas Neurais 100\% Puras e Provas Reais de Limite e Colis\~ao}\\[6pt]
+  {\normalsize\itshape\color{slate}Dossi\^e Complementar de Auditoria para ``Tronco e Ramos'' (\textbf{Isaque 2.0}) --- Rigor Estrito \texttt{R-VERDADE-OU-AJUDA}}\\[8pt]
+  {\normalsize \textbf{Lucas Alves Motta}\,\textsuperscript{1}\hspace{0.5em}{\footnotesize\href{https://orcid.org/0009-0001-3081-5505}{\texttt{ORCID:\,0009-0001-3081-5505}}}}\\[2pt]
+  {\footnotesize \textsuperscript{1}\,Arquiteto de Sistemas Independente \& Pesquisador Principal, \textit{Beyond Adonai Research Laboratory}, Indaial, Santa Catarina, Brasil}\\
+  {\footnotesize CERN/Zenodo DOI: \href{https://doi.org/10.5281/zenodo.24221509}{\texttt{10.5281/zenodo.24221509}} $\cdot$ GitHub: \href{https://github.com/lcsmotta7/trunk-and-branches-isaque-2}{\texttt{lcsmotta7/trunk-and-branches-isaque-2}} $\cdot$ Hugging Face: \href{https://huggingface.co/lcsmotta7/trunk-and-branches-isaque-2}{\texttt{lcsmotta7/trunk-and-branches-isaque-2}}}
+\end{center}
+
+\insightbox{Objetivo Deste Anexo}{O escrut\'inio cient\'ifico independente exige acesso direto n\~ao apenas a tabelas diagramadas, mas aos recibos JSON brutos emitidos pela m\'aquina, aos logs determin\'isticos de compiladores, aos c\'odigos gerados sem assist\^encia pelo modelo e aos rastros reais de erro que delimitaram cada teorema. Este anexo conecta cada afirma\c{c}\~ao quantitativa da monografia principal diretamente ao pacote aberto \texttt{evidence/} distribu\'ido junto ao \href{https://doi.org/10.5281/zenodo.24221509}{\texttt{DOI:\,10.5281/zenodo.24221509}}, certificando que \textbf{100\% dos c\'odigos e malhas 3D admitidos foram gerados token a token exclusivamente pelo Isaque~2.0} e preservando os erros reais de fronteira que comprovam a autenticidade f\'isica dos testes.}
+
+\section{Cadeia de Cust\'odia: Invent\'ario dos Recibos JSON Brutos e Hashes SHA-256}
+
+Cada etapa experimental executada na esta\c{c}\~ao dom\'estica de refer\^encia (Beelink SER9 \texttt{AMD Ryzen 7 255}, $64\text{ GB DDR5}$, eGPU USB4 \texttt{NVIDIA GeForce RTX 5060 8 GB GDDR7}) gravou recibos JSON estruturados com hash SHA-256 antes da publica\c{c}\~ao. Os recibos das Fases~I--V est\~ao ancorados no Bloco \texttt{\#975458} do Bitcoin via OpenTimestamps (\texttt{provenance/03-manifesto-\allowbreak{}sha256-\allowbreak{}etapa-1.txt.ots}), e os recibos da Fase~VI (escada de $10$ ondas) est\~ao preservados bit a bit em \texttt{evidence/receipts\_\allowbreak{}act2\_\allowbreak{}10waves/} e \texttt{evidence/receipts\_\allowbreak{}ots\_\allowbreak{}stage1/}.
+
+\begin{table}[!htbp]
+\centering
+\caption{Invent\'ario mestre da cadeia de cust\'odia dos recibos JSON brutos inalterados inclu\'idos no pacote aberto \texttt{evidence/}.}
+\label{tab:receipts_pt}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}lrrY@{}}
+\toprule
+\textbf{Arquivo de Recibo (\texttt{evidence/})} & \textbf{Bytes} & \textbf{SHA-256} & \textbf{Onde Validou e Por Que \'E Importante} \\
+\midrule
+\texttt{PROVA\_\allowbreak{}LIMITE\_\allowbreak{}...\_\allowbreak{}02.json} & $70.457$ & \texttt{9a47a6..b61033} & Recibo mestre da Fase~VI: trava \texttt{embed\_\allowbreak{}tokens} (\texttt{c78988..}), re\'une $3\times 65=195$ medi\c{c}\~oes e atesta $0$ processos residuais na GPU.\textsuperscript{*} \\
+\texttt{ato2\_\allowbreak{}escada\_\allowbreak{}ondas\_\allowbreak{}3\_\allowbreak{}a\_\allowbreak{}10.json} & $58.311$ & \texttt{fcd12d..04dccd} & Recibo puro do Ato~2: $10$ ondas ($H_0\dots H_{10}$), res\'iduos de Frobenius, $195$ c\'elulas triangulares e sonda de colis\~ao sint\'atica. \\
+\texttt{ato1\_\allowbreak{}desafio04\_\allowbreak{}cego.json} & $11.255$ & \texttt{1daf82..6ae0ad} & Teste cego fora da distribui\c{c}\~ao (\texttt{pass@1=false}): registra o erro real na linha~35 (\texttt{IsValid} em \texttt{USTRUCT*}) e sockets ausentes. \\
+\texttt{ato1\_\allowbreak{}promocao\_\allowbreak{}...\_\allowbreak{}3\_\allowbreak{}10.json} & $3.402$ & \texttt{485f0a..96eec3} & Diagn\'ostico cir\'urgico: comprova que a guarda \texttt{Row == nullptr} restaura $8/8$ invariantes C++20/UHT sem retreino. \\
+\texttt{PROVA\_\allowbreak{}ARENA\_\allowbreak{}KEV\_\allowbreak{}...\_\allowbreak{}01.json} & $127.048$ & \texttt{dae162..95ed093} & Bloco BTC \texttt{\#975458} (abla\c{c}\~ao $3\times 3$): compress\~ao \texttt{KEV-1.0} de $93,25\%$, elevando a nota cega no 35B de $1,77$ a $9,67/10$ ($10,23\times$ $\text{ICC}$). \\
+\texttt{prova\_\allowbreak{}treino\_\allowbreak{}dora\_\allowbreak{}...\_\allowbreak{}kev01.json} & $15.592$ & \texttt{783c77..20890d40} & Bloco BTC \texttt{\#975458}: treino \texttt{DoRA+O-LoRA} das Ondas 1--2 (res\'iduo ortogonal de Frobenius $0,001664$). \\
+\texttt{resultado\_\allowbreak{}treino\_\allowbreak{}...\_\allowbreak{}4b.json} & $27.549$ & \texttt{e26141..b1c54691} & Bloco BTC \texttt{\#975458}: consolida\c{c}\~ao PyTorch+PEFT passo a passo sobre o tronco congelado \texttt{Qwen3.5-4B} (\texttt{NF4}, $28\text{--}31\text{ W}$). \\
+\texttt{veredito\_\allowbreak{}real\_\allowbreak{}juiz\_\allowbreak{}35b\_\allowbreak{}...json} & $2.010$ & \texttt{20b457..61fa4315} & Bloco BTC \texttt{\#975458}: veredito cego independente do juiz \texttt{Qwen3.5-35B-A3B} (\texttt{llama.cpp}, $22,02\text{ GB}$). \\
+\texttt{pre01\_\allowbreak{}semble\_\allowbreak{}prewarm.json} & $1.582$ & \texttt{883e9d..a13ea207} & Bloco BTC \texttt{\#975458}: roteamento cortical zero-copy \texttt{.mmap} via \texttt{MapViewOfFile} em $0,015\text{ ms}$. \\
+\texttt{cli\_\allowbreak{}auditar\_\allowbreak{}hardware.json} & $1.280$ & \texttt{f7ee24..e160edf7} & Telemetria de refer\^encia confirmando \texttt{RTX 5060 8 GB} (\texttt{sm\_120}) e $64\text{ GB}$ de RAM. \\
+\bottomrule
+\end{tabularx}
+\vspace{2pt}
+{\scriptsize \textsuperscript{*}Para preservar o hash SHA-256 original (\texttt{9a47a690..9da977b61033}) citado na Se\c{c}\~ao~6 da monografia, \texttt{PROVA\_\allowbreak{}LIMITE\_\allowbreak{}RUPTURA\_\allowbreak{}E\_\allowbreak{}BLENDER\_\allowbreak{}AO\_\allowbreak{}VIVO\_\allowbreak{}02.json} \'e distribu\'ido sem edi\c{c}\~ao; conforme declarado na Se\c{c}\~ao~7.3, o bloco \texttt{ato\_3} de showcase GUI ali registrado n\~ao integra as reivindica\c{c}\~oes neurais, e seus arquivos \texttt{.blend}/\texttt{.glb} de montagem assistida foram exclu\'idos de \texttt{evidence/}.\par}
+\end{table}
+
+\section{As 195 Medi\c{c}\~oes Triangulares e a Resolu\c{c}\~ao entre \texorpdfstring{$H_0$ e $H_1\dots H_k$}{H0 e H1..Hk}}
+
+Quem l\^e apenas o resumo da Tabela~4 sem abrir \texttt{ato2\_\allowbreak{}escada\_\allowbreak{}ondas\_\allowbreak{}3\_\allowbreak{}a\_\allowbreak{}10.json} pode supor que a escada de $10$ ondas cont\'em apenas $10$ testes pontuais. Na realidade, a cada degrau cumulativo $k \in \{1,\dots,10\}$, o motor mede perda e acur\'acia de tokens em \textbf{todos os $k+1$ conjuntos hold-out anteriores} ($H_0, H_1, \dots, H_k$), totalizando:
+\begin{equation}
+  N_{\text{regime}} = \sum_{k=1}^{10} (k + 1) = 65 \text{ c\'elulas/regime}, \qquad
+  N_{\text{total}} = 3 \times 65 = 195 \text{ medi\c{c}\~oes reais}
+\end{equation}
+distribu\'idas nos tr\^es regimes completos (\texttt{matriz\_\allowbreak{}triangular\_\allowbreak{}coluna\_\allowbreak{}monolitica\_\allowbreak{}1\_\allowbreak{}ate\_\allowbreak{}k}, \texttt{matriz\_\allowbreak{}triangular\_\allowbreak{}ld\_\allowbreak{}mole\_\allowbreak{}cluster\_\allowbreak{}subdominio} e \texttt{matriz\_\allowbreak{}triangular\_\allowbreak{}ld\_\allowbreak{}mole\_\allowbreak{}top2\_\allowbreak{}cirurgico}).
+
+\textbf{Reconcilia\c{c}\~ao Exata entre $H_0$ ($82,85\%$) e o M\'inimo da Curva ($89,91\%$) em $k=4$:}
+Em \texttt{curva\_\allowbreak{}comparativa\_\allowbreak{}saturacao\_\allowbreak{}monolitica\_\allowbreak{}vs\_\allowbreak{}ld\_\allowbreak{}mole}, o m\'inimo resumido avalia estritamente as \textbf{ondas especialistas aprendidas} $H_1\dots H_k$:
+\begin{equation}
+  R_{\min}^{\text{aprendidas}}(k) = \min_{1 \le j \le k} \frac{\exp(-\mathcal{L}_k(H_j))}{\exp(-\mathcal{L}_j(H_j))}, \qquad
+  A_{\min}^{\text{aprendidas}}(k) = \min_{1 \le j \le k} \frac{\text{Acc}_k(H_j)}{\text{Acc}_j(H_j)}.
+\end{equation}
+J\'a $H_0$ (\texttt{H0\_\allowbreak{}MotorHumano\_\allowbreak{}0150}, $\mathcal{L}_0 = 0,493158$, $\text{Acc}_0 = 0,902184$) \'e a \textbf{\^ancora base pr\'e-treino} e aparece acompanhada separadamente na coluna de diagn\'ostico da Tabela~4. A inspe\c{c}\~ao direta do bloco \texttt{onda\_4} em \texttt{ato2\_\allowbreak{}escada\_\allowbreak{}ondas\_\allowbreak{}3\_\allowbreak{}a\_\allowbreak{}10.json} confirma congru\^encia absoluta:
+\begin{itemize}
+  \item \textbf{Base pr\'e-treino $H_0$ em $k=4$:} $\mathcal{L}_4(H_0) = 0,681319$, $\text{Acc}_4(H_0) = 0,860399 \implies$ reten\c{c}\~ao de acur\'acia $95,368\%$ e verossimilhan\c{c}a \textbf{$82,848\%$ ($82,85\%$)}, id\^entico \`a coluna de diagn\'ostico da Tabela~4.
+  \item \textbf{Ondas aprendidas $H_1\dots H_4$ em $k=4$:} verossimilhan\c{c}as $H_1 = \mathbf{89,905\%}$ ($89,91\%$), $H_2 = 96,691\%$, $H_3 = 89,953\%$ e $H_4 = 93,071\%$ ($\min_{1\le j\le 4} = \mathbf{89,905\%}$); acur\'acias $H_1 = 98,010\%$, $H_2 = 98,701\%$, $H_3 = \mathbf{96,995\%}$ ($97,00\%$) e $H_4 = 97,697\%$ ($\min_{1\le j\le 4} = \mathbf{96,995\%}$).
+\end{itemize}
+Conforme pr\'e-registrado na Se\c{c}\~ao~8.1 (\textbf{H5}), a Etapa~1 avaliou a ordem sequencial $1 \to 10$ sob uma semente fixa em GPU dom\'estica de $8\text{ GB}$, ficando m\'ultiplas permuta\c{c}\~oes de ordem e $5$ sementes pr\'e-registradas para a Etapa~2.
+
+\section{Auditoria das A\c{c}\~oes 100\% Puras do Modelo vs.\ Expurgo de Scripts Auxiliares}
+
+A reten\c{c}\~ao de $100,00\%$ sobre cartuchos congelados s\'o se converte em prova de engenharia quando cada cartucho isolado demonstra \textbf{compet\^encia funcional real} sob compiladores determin\'isticos sem tela. Por isso, \texttt{evidence/solo\_\allowbreak{}model\_\allowbreak{}outputs\_\allowbreak{}waves\_\allowbreak{}3\_\allowbreak{}to\_\allowbreak{}10/} e \texttt{evidence/solo\_\allowbreak{}model\_\allowbreak{}outputs\_\allowbreak{}arena\_\allowbreak{}waves\_\allowbreak{}1\_\allowbreak{}to\_\allowbreak{}2/} publicam exclusivamente os c\'odigos Python (\texttt{bpy/bmesh}) e C++20/UE5 emitidos $100\%$ sozinhos pelo Isaque~2.0, acompanhados das duas rodadas independentes de revalida\c{c}\~ao headless (\texttt{exports/} e \texttt{exports\_\allowbreak{}recheck/}).
+
+\begin{table}[!htbp]
+\centering
+\caption{Invent\'ario completo das sa\'idas de c\'odigo 100\% puras do Isaque~2.0 e verifica\c{c}\~oes duplas headless.}
+\label{tab:solo_pt}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}llrrY@{}}
+\toprule
+\textbf{Onda / Prova} & \textbf{C\'odigo Emitido pelo Modelo} & \textbf{Bytes} & \textbf{SHA-256} & \textbf{Prova Determin\'istica nos Verificadores F\'isicos} \\
+\midrule
+Arena $H_1$ & \texttt{DESAFIO-01\_\allowbreak{}C/modulo\_\allowbreak{}01\_\allowbreak{}generated.py} & $2.690$ & \texttt{verificado} & \texttt{Blender 5.2.1} headless: $0$ arestas non-manifold, UV + UCX. \\
+Arena $H_2$ & \texttt{DESAFIO-02\_\allowbreak{}C/InteractionInventory.*} & $4.118$ & \texttt{verificado} & \texttt{clang++ -std=c++20} + UHT: $8/8$ invariantes de mem\'oria UE5. \\
+Arena $H_{1+2}$ & \texttt{DESAFIO-03\_\allowbreak{}C/ModularBridgeAsset.*} & $6.412$ & \texttt{verificado} & Ponte cruzada Blender \texttt{.py} + UE5 \texttt{.h/.cpp}: $100\%$ aprovada. \\
+Onda 3 ($H_3$) & \texttt{onda\_3/onda\_\allowbreak{}3\_\allowbreak{}generated.py} & $3.442$ & \texttt{3f037b0e} & \texttt{Onda3\_Curves.glb} ($37.176\text{ B}$): \texttt{exports}$\,=\,$\texttt{recheck} (\texttt{bb2ea0b8}). \\
+Onda 4 ($H_4$) & \texttt{onda\_4/onda\_\allowbreak{}4\_\allowbreak{}generated.py} & $2.969$ & \texttt{2acff67b} & \texttt{Onda4\_PBR.glb} ($6.624\text{ B}$): \texttt{exports}$\,=\,$\texttt{recheck} (\texttt{13ef4580}). \\
+Onda 5 ($H_5$) & \texttt{onda\_5/onda\_\allowbreak{}5\_\allowbreak{}generated.py} & $1.705$ & \texttt{05ce7074} & Passarela procedural em Geometry Nodes aprovada em AST/headless. \\
+Onda 6 ($H_6$) & \texttt{onda\_6/onda\_\allowbreak{}6\_\allowbreak{}generated.py} & $2.252$ & \texttt{042e67d4} & \texttt{eevee\_stage\_audit.png} ($31.599\text{ B}$): rig de 3 luzes em watts + DOF. \\
+Onda 7 ($H_7$) & \texttt{onda\_7/onda\_\allowbreak{}7\_\allowbreak{}generated.py} & $1.464$ & \texttt{34f6a6b1} & \texttt{Onda7\_LODs.glb} ($20.180\text{ B}$): \texttt{exports}$\,=\,$\texttt{recheck} (\texttt{bf647059}). \\
+Onda 8 ($H_8$) & \texttt{onda\_8/ReplicatedPressureValve.*} & $2.366$ & \texttt{8ce55efa} & \texttt{clang++ -std=c++20}: replica\c{c}\~ao \texttt{DOREPLIFETIME} \& \texttt{OnRep} aprovada. \\
+Onda 9 ($H_9$) & \texttt{onda\_9/IndustrialCatwalkHism.*} & $2.167$ & \texttt{78813312} & \texttt{clang++ -std=c++20}: instanciamento \texttt{UHierarchicalISM} aprovado. \\
+Onda 10 ($H_{10}$) & \texttt{onda\_10/manifest\_\allowbreak{}blender.py} + C++ & $4.976$ & \texttt{abc3f213} & \texttt{PumpingUnit\_Manifest.glb} ($11.728\text{ B}$, \texttt{3e8e920f}) + C++20. \\
+Estagiado C++ & \texttt{KinsmanPumpingStationActor.*} & $3.841$ & \texttt{verificado} & Sintetizado por troca sequencial de cartuchos ($8/8$ UHT/\texttt{clang++}). \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\auditbox{Exclus\~ao Estrita de Showcases GUI com Agente Auxiliar (\texttt{R-VERDADE-OU-AJUDA})}{Durante sess\~oes explorat\'orias de tela ao vivo, um agente auxiliar escreveu scripts de montagem visual no host (\texttt{construir\_\allowbreak{}ao\_\allowbreak{}vivo\_\allowbreak{}na\_\allowbreak{}tela.py} e \texttt{Refinaria-\allowbreak{}Kinsman-\allowbreak{}Ao-\allowbreak{}Vivo-01}). Esses arquivos assistidos (\texttt{planta\_\allowbreak{}industrial\_\allowbreak{}kinsman\_\allowbreak{}ao\_\allowbreak{}vivo.blend}, \texttt{planta\_\allowbreak{}industrial\_\allowbreak{}kinsman.glb} e \texttt{render\_\allowbreak{}planta\_\allowbreak{}ao\_\allowbreak{}vivo.png}) foram \textbf{100\% exclu\'idos deste arquivo de evid\^encias}, garantindo que todo artefato dentro de \texttt{evidence/solo\_\allowbreak{}model\_\allowbreak{}outputs\_*} represente exclusivamente a a\c{c}\~ao aut\^onoma do modelo Isaque~2.0.}
+
+\section{Por Que os Erros Reais e Limites Registrados Provam Aus\^encia de Forjamento}
+
+Testes maquiados escondem falhas; experimentos f\'isicos reais deixam impress\~oes digitais de erro imposs\'iveis de inventar. Tr\^es provas negativas preservadas sem edi\c{c}\~ao em \texttt{evidence/} demonstram a integridade forense da campanha:
+
+\begin{enumerate}
+  \item \textbf{Falha Cega Fora da Distribui\c{c}\~ao (\texttt{DESAFIO-04\_\allowbreak{}C} \& \texttt{ato1\_\allowbreak{}desafio04\_\allowbreak{}cego.json}):} Testado ``de m\~aos amarradas'' antes das Ondas 3--10 ($93,3\%$ de compress\~ao \texttt{KEV-1.0}, de $7.180$ para $481$ tokens), o Isaque~2.0 cumpriu $7/8$ invariantes C++20, mas reprovou no \texttt{clang++} exatamente na linha~35 de \texttt{IndustrialStationNodeActor.cpp} ao chamar \texttt{IsValid(const FIndustrialStationNodeRow*)} em ponteiro \texttt{USTRUCT*} (macro restrita a \texttt{UObject*}) e omitiu 3 sockets in\'editos ausentes da arena v1. A troca diagn\'ostica isolada por \texttt{Row == nullptr} em \texttt{ato1\_\allowbreak{}promocao\_\allowbreak{}e\_\allowbreak{}precheck\_\allowbreak{}ondas3\_\allowbreak{}10.json} aprovou $8/8$ imediatamente, provando s\'intese neural genu\'ina no limite exato do seu repert\'orio.
+  \item \textbf{Colis\~ao Sint\'atica Token a Token (\texttt{FUSAO\_\allowbreak{}2\_\allowbreak{}ONDAS\_\allowbreak{}1\_\allowbreak{}3\_\allowbreak{}pass2.py}):} Ao somar simultaneamente os logits da Onda~1 (\texttt{bmesh}) e da Onda~3 (curvas \texttt{BEZIER}) sobre o tronco $4\text{B}$ ($1.471$ tokens em $2.160,518\text{ s}$), a linha~58 emitiu o h\'ibrido ilegal \texttt{s\_\allowbreak{}out.parent = onda\_\allowbreak{}3 := make\_\allowbreak{}bmesh\_\allowbreak{}solid(...)}, gerando \texttt{SyntaxError} determin\'istico no Python (preservado integralmente em \texttt{evidence/negative\_\allowbreak{}probe\_\allowbreak{}token\_\allowbreak{}fusion\_\allowbreak{}collision/}) e descobrindo empiricamente a \textbf{Lei da Composi\c{c}\~ao Modular em DAG Estagiado} ($1$ cartucho por etapa).
+  \item \textbf{Degrada\c{c}\~ao Gradual Monol\'itica no Posto 16 (\texttt{ato2\_\allowbreak{}escada\_\allowbreak{}ondas\_\allowbreak{}3\_\allowbreak{}a\_\allowbreak{}10.json}):} Em vez de um corte artificial, o adaptador monol\'itico exibe esmagamento progressivo de subespa\c{c}o de $k=2$ ($100,00\%$) a $k=3$ ($98,508\%$ acur\'acia / $92,870\%$ verossimilhan\c{c}a), $k=4$ ($96,995\%$ / $89,905\%$), $k=6$ ($90,499\%$ / $66,462\%$) at\'e $k=10$ ($75,309\%$ / $31,372\%$, onde a perda da Onda~6 salta de $0,0393$ para $1,199$), cravando o \textbf{Teto de 3 Ondas por Cartucho}.
+\end{enumerate}
+
+\end{document}

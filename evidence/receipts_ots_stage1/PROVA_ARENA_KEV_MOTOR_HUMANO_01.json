@@ -1,0 +1,1591 @@
+{
+  "schema": "abraao.isaque.prova_arena_kev_motor_humano/1.0",
+  "timestamp_utc": "2026-11-11T14:58:10Z",
+  "modo_execucao": "SANDBOX_LABORATORIO_100PCT_ISOLADO",
+  "autoridade_exclusiva": "lucas",
+  "co_arquiteto": "gemini-4-argon",
+  "autor_session": "ce5dabcc-19e6-405b-b251-9c8ceacf1937",
+  "revisor_contraditorio_session": "juiz-35b-contraditorio-kev01-9f4a2e11",
+  "leis_inegociaveis": {
+    "producao_0151_intocada": true,
+    "pesos_producao_isaque_0150_intocados": true,
+    "auditoria_sha256_isolamento_producao": {
+      "abraao_bin_arquivos_verificados": 23,
+      "abraao_bin_divergencias_sha256": 0,
+      "colunas_isaque_arquivos_verificados": 93,
+      "colunas_isaque_divergencias_sha256": 0,
+      "isolamento_100pct_integro": true
+    },
+    "vocabulario_base_congelado_embed_lm_head": true,
+    "anti_leak_gbnf_no_think_20345": true,
+    "compute_procs_ativos_finais_nvidia_smi": 0
+  },
+  "pre_01_semble_async_prewarm": {
+    "cold_ms": 5759.681,
+    "warm_mcp_gated_ms": 33.553,
+    "warm_semble_ram_ms": 3.92,
+    "aprovado_menor_150ms": true
+  },
+  "arena_vetorial_tripla_384d": {
+    "arena_records": 67,
+    "arena_mmap_bytes": 308800,
+    "proj_linear_bytes": 1769536,
+    "proj_linear_under_2mb": true,
+    "benchmark_domains": {
+      "BLENDER_BPY": {
+        "weights": [
+          0.45,
+          0.35,
+          0.2
+        ],
+        "mmap_lookup_latency_ms": 0.0153,
+        "under_1ms": true,
+        "top_1_id": "KEV-BLENDER-13",
+        "top_1_domain_match": true,
+        "top_1_score": 0.53578
+      },
+      "UE5_CPP": {
+        "weights": [
+          0.15,
+          0.55,
+          0.3
+        ],
+        "mmap_lookup_latency_ms": 0.0157,
+        "under_1ms": true,
+        "top_1_id": "KEV-UE5-03",
+        "top_1_domain_match": true,
+        "top_1_score": 0.42194
+      },
+      "BRIDGE_3D": {
+        "weights": [
+          0.4,
+          0.3,
+          0.3
+        ],
+        "mmap_lookup_latency_ms": 0.0156,
+        "under_1ms": true,
+        "top_1_id": "KEV-BRIDGE-10",
+        "top_1_domain_match": true,
+        "top_1_score": 0.6129
+      }
+    }
+  },
+  "treino_anti_esquecimento_dora_olora": {
+    "onda_1_safetensors": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\pesos\\lab-mh-blender-bridge.safetensors",
+    "onda_2_safetensors": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\pesos\\lab-mh-ue5-kev.safetensors",
+    "lambda_orth": 0.1,
+    "replay_buffer_pct": 15.0,
+    "orth_frob_sq_inicial": 0.0,
+    "orth_frob_sq_final": 0.00166367,
+    "retencao_holdout_0150_token_acc_pct": 99.79,
+    "retencao_holdout_0150_verossimilhanca_pct": 96.78,
+    "retencao_holdout_onda1_token_acc_pct": 100.0,
+    "retencao_holdout_onda1_ganho_loss_pct": 100.066,
+    "retencao_holdout_onda1_verossimilhanca_pct": 100.123,
+    "queda_loss_onda2_ue5_pct": 98.2,
+    "meta_retencao_token_acc_99pct_cumprida": true,
+    "vram_pico_treino_mib": 6367
+  },
+  "recorde_referencia_producao_0150": {
+    "nota_media_0_10": 8.57,
+    "icc": 2.7828
+  },
+  "competidores_arena_3x3": {
+    "A_Baseline_Campeao_0150_JEV_AtomSD": {
+      "tokens_entrada_bruta_por_desafio": [
+        6999,
+        6407,
+        6336
+      ],
+      "tokens_entregues_por_desafio": [
+        560,
+        560,
+        560
+      ],
+      "tokens_entregues_total": 1680,
+      "tokens_entregues_medio": 560.0,
+      "compressao_frente_entrada_bruta_pct": 91.49,
+      "desafios_100pct_aprovados_pass_1": "0/3",
+      "desafios_100pct_aprovados": "0/3",
+      "verificadores_fisicos_aprovados_pass_1": "0/4",
+      "taxa_aprovacao_pass1_pct": 0.0,
+      "verificadores_fisicos_aprovados": "0/4",
+      "taxa_aprovacao_mecanica_real_pct": 0.0,
+      "notas_cegas_juiz_35b_por_desafio": [
+        1.0,
+        3.0,
+        0.9
+      ],
+      "nota_cega_media_juiz_35b_0_10": 1.63,
+      "latencia_pulso_emissao_por_desafio_s": [
+        23.185,
+        24.443,
+        22.674
+      ],
+      "latencia_pulso_media_s": 23.434,
+      "icc_indice_condutividade_cognitiva": 0.1242,
+      "comparacao_recorde_0150_icc_2_7828": "0.04x",
+      "vram_pico_mib": 5228,
+      "detalhes_desafios": [
+        {
+          "desafio_id": "DESAFIO-01",
+          "domain": "BLENDER_BPY",
+          "tokens_entrada_bruta": 6999,
+          "pacote_texto": "[VICOP-SPEC]\n**TAREFA:** Blender 5.2 Headless -> Asset Modular Sci-Fi/Industrial Pronto para UE5 (4.0m x 0.4m x 3.0m)\n**OBJETIVO:** Construir via script Python `bpy`/`bmesh` em modo estritamente `--background --factory-startup` o módulo arquitetônico industrial sci-fi `Modulo_01` pronto para Unreal Engine 5.\n**REQUISITOS FÍSICOS INEGOCIÁVEIS:**\n1. **Sistema de Unidades:** `METRIC`, `scale_length = 1.0`, orientação `Z-up`.\n2. **Dimensões Exatas da AABB (`@SPACE`):** Largura `X = 4.0m` (`[-2.0, +2.0]`), Espessura `Y = 0.4m` (`[-0.2, +0.2]`), Altura `Z = 3.0m` (`[0.0, +3.0]`), tolerância máxima `±2%`.\n3. **Pivô e Base:** Origem do objeto `Modulo_01` cravada em `(0.0, 0.0, 0.0)` com `Z_min = 0.0` perfeitamente alinhado ao piso.\n4. **Geometria e Normais:** Detalhe sci-fi industrial recuado (`bmesh.ops.inset_individual` nas faces frontais/traseiras mantendo 100% 2-manifold fechado, `non_manifold_edges == 0`, `zero_area_faces == 0`, `recalc_face_normals` com volume assinado > 0).\n5. **Mapeamento UV Determinístico:** Camada UV ativa sem overlap crítico calculada em `bmesh` (`bm.loops.layers.uv.verify()`) para nunca falhar por `bpy.ops.uv.smart_project.poll()` sem janela 3D.\n6. **Colisor Físico Unreal:** Objeto separado `UCX_Modulo_01` gerado por `bmesh.ops.convex_hull` cobrindo `[4.0, 0.4, 3.0]` com `Z_min = 0.0` e `100% manifold`.\n7. **Exportação Real em Disco:** Exportar `Modulo_01.glb` (`export_scene.gltf`) e `Modulo_01.fbx` (`export_scene.fbx`) no diretório `os.environ.get('KEV_EXPORT_DIR', '.')",
+          "tokens_pacote_entregue": 560,
+          "compressao_pct": 92.0,
+          "latencia_pulso_emissao_s": 23.185,
+          "mmap_lookup_ms": null,
+          "vram_pico_emissao_mib": 5210,
+          "execucao_fisica": {
+            "aprovado_pass_1_desafio": false,
+            "aprovado_mecanico_desafio": false,
+            "verificadores_acionados": 1,
+            "verificadores_aprovados_pass_1": 0,
+            "verificadores_aprovados": 0,
+            "latencia_sintese_executor_s": 117.325,
+            "vram_pico_executor_mib": 5228,
+            "recibo_blender": {
+              "schema": "isaque.kev01.verificador_fisico_blender/1.0",
+              "blender_version": "5.2.1 LTS",
+              "script_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-01_A\\modulo_01_generated.py",
+              "aprovado_mecanico": false,
+              "exit_code": 1,
+              "zero_traceback": false,
+              "traceback": "Traceback (most recent call last):\n  File \"D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\temp\\blender_audit_9cinu3pg\\_inner_bmesh_audit.py\", line 33, in <module>\n    runpy.run_path(str(target_script), run_name=\"__main__\")\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-01_A\\modulo_01_generated.py\", line 1, in <module>\n    import bpy, bmesh, os, math, json, struct, zlib, hashlib, time, sys, platform, uuid, datetime, random, string, itertools, collections, functools, operator, re, textwrap, base64, html, urllib.parse, urllib.request, urllib.error, http.client, socket, threading, multiprocessing, queue, select, errno, signal, termios, tty, pty, posix, ctypes\nModuleNotFoundError: No module named 'termios'\n",
+              "unit_system": "METRIC",
+              "unit_scale": 1.0,
+              "non_manifold_edges": 0,
+              "non_manifold_edges_ucx": 0,
+              "zero_area_faces": 0,
+              "normals_consistent": true,
+              "uv_unwrapped_valid": true,
+              "pivot_z_min_aligned": false,
+              "primary_origin_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "bounding_box_min_m": [
+                -1.0,
+                -1.0,
+                -1.0
+              ],
+              "bounding_box_max_m": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "bounding_box_m": [
+                2.0,
+                2.0,
+                2.0
+              ],
+              "expected_bbox_m": [
+                4.0,
+                0.4,
+                3.0
+              ],
+              "bbox_error_pct": [
+                50.0,
+                400.0,
+                33.3333
+              ],
+              "bbox_within_2pct": false,
+              "visual_meshes": [
+                {
+                  "name": "Cube",
+                  "is_ucx": false,
+                  "verts": 8,
+                  "tris": 12,
+                  "origin_world_m": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "bbox_min_m": [
+                    -1.0,
+                    -1.0,
+                    -1.0
+                  ],
+                  "bbox_max_m": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "dimensions_m": [
+                    2.0,
+                    2.0,
+                    2.0
+                  ],
+                  "non_manifold_edges": 0,
+                  "zero_area_faces": 0,
+                  "zero_normals": 0,
+                  "signed_volume_m3": 8.0,
+                  "normals_outward_consistent": true,
+                  "uv_layers": 1,
+                  "uv_area_total": 0.375
+                }
+              ],
+              "ucx_colliders": [],
+              "sockets": [],
+              "exported_files": [],
+              "headless_workbench_render_ok": true,
+              "headless_workbench_preview": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-01_A\\exports\\audit_workbench_ortho.png",
+              "violacoes": [
+                "EXECUCAO_FALHOU: exit=1 traceback=<module>\n    import bpy, bmesh, os, math, json, struct, zlib, hashlib, time, sys, platform, uuid, datetime, random, string, itertools, collections, functools, operator, re, textwrap, base64, html, urllib.parse, urllib.request, urllib.error, http.client, socket, threading, multiprocessing, queue, select, errno, signal, termios, tty, pty, posix, ctypes\nModuleNotFoundError: No module named 'termios'\n",
+                "UCX_INVALIDO: ucx_count=0, non_manifold_ucx=0",
+                "PIVOT_DESALINHADO: origin=[0.0, 0.0, 0.0], bbox_min=[-1.0, -1.0, -1.0] (exigido pivô (0,0,0) e Z_min=0)",
+                "BOUNDING_BOX_FORA_DE_2PCT: medido=[2.0, 2.0, 2.0] vs esperado=[4.0, 0.4, 3.0] (erro_pct=[50.0, 400.0, 33.3333])",
+                "EXPORT_GLB_FBX_AUSENTE: nenhum arquivo .glb/.fbx válido gravado em disco"
+              ],
+              "blender_cli_returncode": 0,
+              "latencia_verificacao_s": 1.606,
+              "tentativas_loop": 3,
+              "aprovado_pass_1": false
+            },
+            "recibo_ue5_cpp": null
+          }
+        },
+        {
+          "desafio_id": "DESAFIO-02",
+          "domain": "UE5_CPP",
+          "tokens_entrada_bruta": 6407,
+          "pacote_texto": "[COLUNA-CORTICAL-MH-01-VICOP]\n**SISTEMA:** VICOP (Extrator Perceptual) | **NÍVEL:** 0.15.0 Soberano | **STATUS:** COMPRESSÃO ATIVA\n**PROMPT:** [VETOR-ANCORA-EN] — Extrair a especificação técnica exata do desafio `DESAFIO-02` e compactar em 4 blocos oficiais, preservando classes, structs, objetos, sockets e restrições de UHT/GC.\n\n---\n[COLUNA-CORTICAL-MH-01-VICOP]\n**BLOCO 1: ARQUITETURA E RESTRIÇÕES DE COMPILAÇÃO (UHT)**\n*   **Header Guard & Ordem:** `#pragma once` obrigatório no topo. O arquivo `<HeaderName>.generated.h` deve ser o **ÚLTIMO** `#include` do `.h` para injetar as macros `CURRENT_FILE_ID_<Line>_GENERATED_BODY`.\n*   **Injeção de Tipos:** As macros injetadas devem definir explicitamente `Super` e `ThisClass`.\n*   **Garbage Collector (GC):** ZERO ponteiros crus (`UObject*`, `AActor*`, `UStaticMeshComponent*`) como membros sem `UPROPERTY(...)`. Ponteiros derivados de `UObject` devem usar `TObjectPtr<T>` com atributos `VisibleAnywhere, BlueprintReadOnly`.\n*   **Ciclo de Vida:** Componentes de ator que operam por eventos ou temporizadores (`FTimerManager`) devem desabilitar `bCanEverTick` (`PrimaryComponentTick.bCanEverTick = false;`, `PrimaryActorTick.bCanEverTick = false;`).\n\n---\n[COLUNA-CORTICAL-MH-01-VICOP]\n**BLOCO 2: DEFINIÇÕES DE DADOS (STRUCTS E CLASSES)**\n*   **FInventorySlotEntry:** `USTRUCT(BlueprintType) struct FInventorySlotEntry` com `GENERATED_BODY()`, contendo `FName ItemId` e `int32 Quantity`.\n*   **UInteractionInventoryComponent:** `UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent)) class UInteractionInventoryComponent : public UActorComponent` com `GENERATED_BODY()`.\n*   **AInteractableWorldActor:** `UCLASS() class AInteractableWorldActor : public AActor` com `GENERATED_BODY()`.\n\n---\n[COLUNA-CORTICAL-MH-01-VICOP]\n**BLOCO 3: MEMBROS,",
+          "tokens_pacote_entregue": 560,
+          "compressao_pct": 91.26,
+          "latencia_pulso_emissao_s": 24.443,
+          "mmap_lookup_ms": null,
+          "vram_pico_emissao_mib": 5211,
+          "execucao_fisica": {
+            "aprovado_pass_1_desafio": false,
+            "aprovado_mecanico_desafio": false,
+            "verificadores_acionados": 1,
+            "verificadores_aprovados_pass_1": 0,
+            "verificadores_aprovados": 0,
+            "latencia_sintese_executor_s": 166.646,
+            "vram_pico_executor_mib": 5227,
+            "recibo_blender": null,
+            "recibo_ue5_cpp": {
+              "schema": "isaque.kev01.verificador_fisico_ue5_cpp/1.0",
+              "header_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h",
+              "source_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp",
+              "aprovado_mecanico": false,
+              "invariantes_8_de_8": {
+                "inv_01_pragma_once": true,
+                "inv_02_generated_h_ultimo_include": true,
+                "inv_03_uclass_ou_ustruct_presente": true,
+                "inv_04_generated_body_pareado": true,
+                "inv_05_zero_ponteiro_uobject_cru_sem_gc": true,
+                "inv_06_zero_new_bruto_em_uobject": true,
+                "inv_07_ciclo_vida_e_macros_ue5_validos": true,
+                "inv_08_clang_cpp20_fsyntax_only_zero_erros": false
+              },
+              "violacoes": [
+                "INV-08: clang++ -fsyntax-only -std=c++20 retornou exit=1: In file included from D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:5:\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: error: variable has incomplete type 'class INTERACTIONINVENTORYSYSTEM_API'\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:7: note: forward declaration of 'INTERACTIONINVENTORYSYSTEM_API'\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:69: error: expected ';' after top level declarator\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                                                     ^\r\n      |                                                                     ;\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:71: error: expected unqualified-id\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                                                       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:76:38: error: variable has incomplete type 'class INTERACTIONINVENTORYSYSTEM_API'\r\n   76 | class INTERACTIONINVENTORYSYSTEM_API AInteractableWorldActor : public AActor\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:7: note: forward declaration of 'INTERACTIONINVENTORYSYSTEM_API'\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:76:62: error: expected ';' after top level declarator\r\n   76 | class INTERACTIONINVENTORYSYSTEM_API AInteractableWorldActor : public AActor\r\n      |                                                              ^\r\n      |                                                              ;\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:76:64: error: expected unqualified-id\r\n   76 | class INTERACTIONINVENTORYSYSTEM_API AInteractableWorldActor : public AActor\r\n      |                                                                ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:15:1: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   15 | UInteractionInventoryComponent::UInteractionInventoryComponent()\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:20:1: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   20 | UInteractionInventoryComponent::~UInteractionInventoryComponent()\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:25:6: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   25 | void UInteractionInventoryComponent::InitializeInventory(const TArray<FName>& InitialItemIds)\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:33:6: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   33 | bool UInteractionInventoryComponent::AddItemToInventory(const FName& ItemId, const int32 Quantity, bool bForceAdd)\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:49:6: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   49 | bool UInteractionInventoryComponent::RemoveItemFromInventory(const FName& ItemId, const int32 Quantity)\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:67:6: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   67 | bool UInteractionInventoryComponent::IsItemInInventory(const FName& ItemId) const\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:72:7: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   72 | int32 UInteractionInventoryComponent::GetItemQuantity(const FName& ItemId) const\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:81:6: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   81 | void UInteractionInventoryComponent::GetAllInventoryItems(TArray<FName>& OutItemIds)\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:90:6: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   90 | void UInteractionInventoryComponent::Activate()\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:95:6: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   95 | void UInteractionInventoryComponent::Deactivate()\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:104:1: error: 'AInteractableWorldActor' is not a class, namespace, or enumeration\r\n  104 | AInteractableWorldActor::AInteractableWorldActor()\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:76:38: note: 'AInteractableWorldActor' declared here\r\n   76 | class INTERACTIONINVENTORYSYSTEM_API AInteractableWorldActor : public AActor\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:109:1: error: 'AInteractableWorldActor' is not a class, namespace, or enumeration\r\n  109 | AInteractableWorldActor::~AInteractableWorldActor()\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:76:38: note: 'AInteractableWorldActor' declared here\r\n   76 | class INTERACTIONINVENTORYSYSTEM_API AInteractableWorldActor : public AActor\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:114:6: error: 'AInteractableWorldActor' is not a class, namespace, or enumeration\r\n  114 | void AInteractableWorldActor::InitializeActor()\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:76:38: note: 'AInteractableWorldActor' declared here\r\n   76 | class INTERACTIONINVENTORYSYSTEM_API AInteractableWorldActor : public AActor\r\n      |                                      ^\r\nfatal error: too many errors emitted, stopping now [-ferror-limit=]\r\n20 errors generated."
+              ],
+              "ast_telemetria": {
+                "header_ast_errors": 25,
+                "source_ast_errors": 0,
+                "includes_header_ordem": [
+                  "CoreMinimal.h",
+                  "GameFramework/Actor.h",
+                  "Components/ActorComponent.h",
+                  "InteractionInventorySystem.generated.h"
+                ],
+                "tipos_refletidos": [
+                  "USTRUCT:FInventorySlotEntry",
+                  "UCLASS:UInteractionInventoryComponent",
+                  "UCLASS:AInteractableWorldActor"
+                ],
+                "membros_uobject_auditados": 0,
+                "ponteiros_crus_uobject_violadores": [],
+                "new_bruto_uobject_violadores": [],
+                "ufunctions_detectadas": 7,
+                "uproperties_detectadas": 0
+              },
+              "clang_cpp20": {
+                "binario": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\x64\\bin\\clang++.exe",
+                "exit_code": 1,
+                "zero_erros_sintaxe": false,
+                "stderr_diagnostico": "In file included from D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:5:\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: error: variable has incomplete type 'class INTERACTIONINVENTORYSYSTEM_API'\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:7: note: forward declaration of 'INTERACTIONINVENTORYSYSTEM_API'\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:69: error: expected ';' after top level declarator\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                                                     ^\r\n      |                                                                     ;\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:71: error: expected unqualified-id\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                                                       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:76:38: error: variable has incomplete type 'class INTERACTIONINVENTORYSYSTEM_API'\r\n   76 | class INTERACTIONINVENTORYSYSTEM_API AInteractableWorldActor : public AActor\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:7: note: forward declaration of 'INTERACTIONINVENTORYSYSTEM_API'\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:76:62: error: expected ';' after top level declarator\r\n   76 | class INTERACTIONINVENTORYSYSTEM_API AInteractableWorldActor : public AActor\r\n      |                                                              ^\r\n      |                                                              ;\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:76:64: error: expected unqualified-id\r\n   76 | class INTERACTIONINVENTORYSYSTEM_API AInteractableWorldActor : public AActor\r\n      |                                                                ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:15:1: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   15 | UInteractionInventoryComponent::UInteractionInventoryComponent()\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:20:1: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   20 | UInteractionInventoryComponent::~UInteractionInventoryComponent()\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:25:6: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   25 | void UInteractionInventoryComponent::InitializeInventory(const TArray<FName>& InitialItemIds)\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:33:6: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   33 | bool UInteractionInventoryComponent::AddItemToInventory(const FName& ItemId, const int32 Quantity, bool bForceAdd)\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:49:6: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   49 | bool UInteractionInventoryComponent::RemoveItemFromInventory(const FName& ItemId, const int32 Quantity)\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:67:6: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   67 | bool UInteractionInventoryComponent::IsItemInInventory(const FName& ItemId) const\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:72:7: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   72 | int32 UInteractionInventoryComponent::GetItemQuantity(const FName& ItemId) const\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:81:6: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   81 | void UInteractionInventoryComponent::GetAllInventoryItems(TArray<FName>& OutItemIds)\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:90:6: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   90 | void UInteractionInventoryComponent::Activate()\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:95:6: error: 'UInteractionInventoryComponent' is not a class, namespace, or enumeration\r\n   95 | void UInteractionInventoryComponent::Deactivate()\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:32:38: note: 'UInteractionInventoryComponent' declared here\r\n   32 | class INTERACTIONINVENTORYSYSTEM_API UInteractionInventoryComponent : public UActorComponent\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:104:1: error: 'AInteractableWorldActor' is not a class, namespace, or enumeration\r\n  104 | AInteractableWorldActor::AInteractableWorldActor()\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:76:38: note: 'AInteractableWorldActor' declared here\r\n   76 | class INTERACTIONINVENTORYSYSTEM_API AInteractableWorldActor : public AActor\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:109:1: error: 'AInteractableWorldActor' is not a class, namespace, or enumeration\r\n  109 | AInteractableWorldActor::~AInteractableWorldActor()\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:76:38: note: 'AInteractableWorldActor' declared here\r\n   76 | class INTERACTIONINVENTORYSYSTEM_API AInteractableWorldActor : public AActor\r\n      |                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.cpp:114:6: error: 'AInteractableWorldActor' is not a class, namespace, or enumeration\r\n  114 | void AInteractableWorldActor::InitializeActor()\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_A\\InteractionInventorySystem.h:76:38: note: 'AInteractableWorldActor' declared here\r\n   76 | class INTERACTIONINVENTORYSYSTEM_API AInteractableWorldActor : public AActor\r\n      |                                      ^\r\nfatal error: too many errors emitted, stopping now [-ferror-limit=]\r\n20 errors generated."
+              },
+              "tentativas_loop": 3,
+              "aprovado_pass_1": false
+            }
+          }
+        },
+        {
+          "desafio_id": "DESAFIO-03",
+          "domain": "BRIDGE_3D",
+          "tokens_entrada_bruta": 6336,
+          "pacote_texto": "[VICOP-SPEC]\n**TAREFA:** Gerar em cadeia coordenada (`BRIDGE_3D`) o pacote de **3 variações paramétricas** no Blender 5.2 headless (bmesh puro) E a arquitetura C++20 Data-Driven correspondente na Unreal Engine 5 (`ModularBridgeAssetActor.h` e `.cpp`).\n**PARTE A — Blender 5.2 Headless:** Escala `METRIC` (`scale_length = 1.0`, `Z-up`), gerando 3 variações fechadas (`2-manifold`, UV válida):\n1. **Var_01_Standard**: `1.00m x 0.16m x 0.28m` posicionada na origem `(0.0, 0.0, 0.0)` com `Z_min = 0.0`.\n2. **Var_02_Compact**: `0.80m x 0.16m x 0.28m` posicionada em `(0.0, 0.65, 0.0)` com `Z_min = 0.0`.\n3. **Var_03_Heavy**: `1.25m x 0.18m x 0.32m` posicionada em `(0.0, -0.65, 0.0)` com `Z_min = 0.0`.\n**PARTE B — Unreal Engine 5 C++20 Data-Driven:** Definir `USTRUCT(BlueprintType) struct FModularBridgeVariantRow : public FTableRowBase` com `TObjectPtr<UStaticMesh> VariantMesh`, `FVector ExpectedDimensionsMeters{1.00, 0.16, 0.28}`, `FName MuzzleSocketName = FName(\"Socket_Muzzle\")` e `GripSocketName = FName(\"Socket_Grip\")`. Definir `UCLASS() class AModularBridgeAssetActor : public AActor` com `TObjectPtr<UStaticMeshComponent>` protegido por `UPROPERTY`, `PrimaryActorTick.bCanEverTick = false`, validação cruzada de escala (`ExpectedMeters * 100.0` -> tolerância `±2%`) e acoplamento via `FAttachmentTransformRules::SnapToTargetNotIncludingScale`.\n\n[VETOR-ANCORA-EN]\n**VETOR-ANCORA-EN:** [ACERVO MOTOR HUMANO :: P0-LEITURA-DO-SITIO.md], [ACERVO MOTOR HUMANO :: P1-",
+          "tokens_pacote_entregue": 560,
+          "compressao_pct": 91.16,
+          "latencia_pulso_emissao_s": 22.674,
+          "mmap_lookup_ms": null,
+          "vram_pico_emissao_mib": 4991,
+          "execucao_fisica": {
+            "aprovado_pass_1_desafio": false,
+            "aprovado_mecanico_desafio": false,
+            "verificadores_acionados": 2,
+            "verificadores_aprovados_pass_1": 0,
+            "verificadores_aprovados": 0,
+            "latencia_sintese_executor_s": 376.042,
+            "vram_pico_executor_mib": 5008,
+            "recibo_blender": {
+              "schema": "isaque.kev01.verificador_fisico_blender/1.0",
+              "blender_version": "5.2.1 LTS",
+              "script_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\modularbridgeassetactor_generated.py",
+              "aprovado_mecanico": false,
+              "exit_code": 1,
+              "zero_traceback": false,
+              "traceback": "Traceback (most recent call last):\n  File \"D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\temp\\blender_audit_03lko180\\_inner_bmesh_audit.py\", line 33, in <module>\n    runpy.run_path(str(target_script), run_name=\"__main__\")\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 286, in run_path\n  File \"<frozen runpy>\", line 259, in _get_code_from_file\n  File \"D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\modularbridgeassetactor_generated.py\", line 154\n    code = '''// ==========================================\n           ^\nSyntaxError: unterminated triple-quoted string literal (detected at line 204)\n",
+              "unit_system": "METRIC",
+              "unit_scale": 1.0,
+              "non_manifold_edges": 0,
+              "non_manifold_edges_ucx": 0,
+              "zero_area_faces": 0,
+              "normals_consistent": true,
+              "uv_unwrapped_valid": true,
+              "pivot_z_min_aligned": false,
+              "primary_origin_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "bounding_box_min_m": [
+                -1.0,
+                -1.0,
+                -1.0
+              ],
+              "bounding_box_max_m": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "bounding_box_m": [
+                2.0,
+                2.0,
+                2.0
+              ],
+              "expected_bbox_m": [
+                1.0,
+                0.16,
+                0.28
+              ],
+              "bbox_error_pct": [
+                100.0,
+                1150.0,
+                614.2857
+              ],
+              "bbox_within_2pct": false,
+              "visual_meshes": [
+                {
+                  "name": "Cube",
+                  "is_ucx": false,
+                  "verts": 8,
+                  "tris": 12,
+                  "origin_world_m": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "bbox_min_m": [
+                    -1.0,
+                    -1.0,
+                    -1.0
+                  ],
+                  "bbox_max_m": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "dimensions_m": [
+                    2.0,
+                    2.0,
+                    2.0
+                  ],
+                  "non_manifold_edges": 0,
+                  "zero_area_faces": 0,
+                  "zero_normals": 0,
+                  "signed_volume_m3": 8.0,
+                  "normals_outward_consistent": true,
+                  "uv_layers": 1,
+                  "uv_area_total": 0.375
+                }
+              ],
+              "ucx_colliders": [],
+              "sockets": [],
+              "exported_files": [],
+              "headless_workbench_render_ok": true,
+              "headless_workbench_preview": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\exports\\audit_workbench_ortho.png",
+              "violacoes": [
+                "EXECUCAO_FALHOU: exit=1 traceback=^^^^^^^^^\n  File \"<frozen runpy>\", line 286, in run_path\n  File \"<frozen runpy>\", line 259, in _get_code_from_file\n  File \"D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\modularbridgeassetactor_generated.py\", line 154\n    code = '''// ==========================================\n           ^\nSyntaxError: unterminated triple-quoted string literal (detected at line 204)\n",
+                "VARIACOES_INSUFICIENTES: esperado >= 3 malhas visuais, obteve 1",
+                "UCX_INVALIDO: ucx_count=0, non_manifold_ucx=0",
+                "PIVOT_DESALINHADO: origin=[0.0, 0.0, 0.0], bbox_min=[-1.0, -1.0, -1.0] (exigido pivô (0,0,0) e Z_min=0)",
+                "BOUNDING_BOX_FORA_DE_2PCT: medido=[2.0, 2.0, 2.0] vs esperado=[1.0, 0.16, 0.28] (erro_pct=[100.0, 1150.0, 614.2857])",
+                "SOCKETS_AUSENTES: requeridos=['Socket_Muzzle', 'Socket_Grip'], encontrados=[]",
+                "EXPORT_GLB_FBX_AUSENTE: nenhum arquivo .glb/.fbx válido gravado em disco"
+              ],
+              "blender_cli_returncode": 0,
+              "latencia_verificacao_s": 1.822,
+              "tentativas_loop": 3,
+              "aprovado_pass_1": false
+            },
+            "recibo_ue5_cpp": {
+              "schema": "isaque.kev01.verificador_fisico_ue5_cpp/1.0",
+              "header_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h",
+              "source_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp",
+              "aprovado_mecanico": false,
+              "invariantes_8_de_8": {
+                "inv_01_pragma_once": true,
+                "inv_02_generated_h_ultimo_include": true,
+                "inv_03_uclass_ou_ustruct_presente": true,
+                "inv_04_generated_body_pareado": true,
+                "inv_05_zero_ponteiro_uobject_cru_sem_gc": true,
+                "inv_06_zero_new_bruto_em_uobject": true,
+                "inv_07_ciclo_vida_e_macros_ue5_validos": true,
+                "inv_08_clang_cpp20_fsyntax_only_zero_erros": false
+              },
+              "violacoes": [
+                "INV-08: clang++ -fsyntax-only -std=c++20 retornou exit=1: D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:24:2: error: unknown type name 'FID_ModularBridgeAssetActor_24_GENERATED_BODY'\r\n   24 |         GENERATED_BODY()\r\n      |         ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\temp\\ue5_stub_272f1403313e_43476\\CoreMinimal.h:41:29: note: expanded from macro 'GENERATED_BODY'\r\n   41 | #define GENERATED_BODY(...) UE_BODY_CONCAT(CURRENT_FILE_ID, _, __LINE__, _GENERATED_BODY)\r\n      |                             ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\temp\\ue5_stub_272f1403313e_43476\\CoreMinimal.h:37:36: note: expanded from macro 'UE_BODY_CONCAT'\r\n   37 | #define UE_BODY_CONCAT(A, B, C, D) UE_BODY_CONCAT_INNER(A, B, C, D)\r\n      |                                    ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\temp\\ue5_stub_272f1403313e_43476\\CoreMinimal.h:36:42: note: expanded from macro 'UE_BODY_CONCAT_INNER'\r\n   36 | #define UE_BODY_CONCAT_INNER(A, B, C, D) A##B##C##D\r\n      |                                          ^\r\n<scratch space>:108:1: note: expanded from here\r\n  108 | FID_ModularBridgeAssetActor_24_GENERATED_BODY\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:26:1: error: expected member name or ';' after declaration specifiers\r\n   24 |         GENERATED_BODY()\r\n      |         ~~~~~~~~~~~~~~~~\r\n   25 | \r\n   26 | public:\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:41:26: error: variable has incomplete type 'class MODULAR_BRIDGE_API'\r\n   41 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                          ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:41:7: note: forward declaration of 'MODULAR_BRIDGE_API'\r\n   41 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:41:51: error: expected ';' after top level declarator\r\n   41 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                                                   ^\r\n      |                                                   ;\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:41:53: error: expected unqualified-id\r\n   41 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                                                     ^\r\nIn file included from D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:81:\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:25:8: error: redefinition of 'FModularBridgeVariantRow'\r\n   25 | struct FModularBridgeVariantRow : public FTableRowBase\r\n      |        ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:22:8: note: previous definition is here\r\n   22 | struct FModularBridgeVariantRow : public FTableRowBase\r\n      |        ^\r\nIn file included from D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:81:\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:44:26: error: redefinition of 'AModularBridgeAssetActor'\r\n   44 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                          ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:41:26: note: previous definition is here\r\n   41 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                          ^\r\nIn file included from D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:81:\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:44:51: error: expected ';' after top level declarator\r\n   44 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                                                   ^\r\n      |                                                   ;\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:44:53: error: expected unqualified-id\r\n   44 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                                                     ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:114:1: error: 'AModularBridgeAssetActor' is not a class, namespace, or enumeration\r\n  114 | AModularBridgeAssetActor::AModularBridgeAssetActor()\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:44:26: note: 'AModularBridgeAssetActor' declared here\r\n   44 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                          ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:119:6: error: 'AModularBridgeAssetActor' is not a class, namespace, or enumeration\r\n  119 | void AModularBridgeAssetActor::BeginPlay()\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:44:26: note: 'AModularBridgeAssetActor' declared here\r\n   44 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                          ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:127:6: error: 'AModularBridgeAssetActor' is not a class, namespace, or enumeration\r\n  127 | bool AModularBridgeAssetActor::ValidateScale(const FVector& actualDimensions) const\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:44:26: note: 'AModularBridgeAssetActor' declared here\r\n   44 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                          ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:145:6: error: 'AModularBridgeAssetActor' is not a class, namespace, or enumeration\r\n  145 | void AModularBridgeAssetActor::AttachBridgeToPlayer()\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:44:26: note: 'AModularBridgeAssetActor' declared here\r\n   44 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                          ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:169:6: error: 'AModularBridgeAssetActor' is not a class, namespace, or enumeration\r\n  169 | void AModularBridgeAssetActor::LoadVariant_Standard()\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:44:26: note: 'AModularBridgeAssetActor' declared here\r\n   44 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                          ^\r\n14 errors generated."
+              ],
+              "ast_telemetria": {
+                "header_ast_errors": 8,
+                "source_ast_errors": 9,
+                "includes_header_ordem": [
+                  "CoreMinimal.h",
+                  "Modules/ModuleManager.h",
+                  "ModularBridgeAssetActor.generated.h"
+                ],
+                "tipos_refletidos": [
+                  "USTRUCT:FModularBridgeVariantRow",
+                  "UCLASS:AModularBridgeAssetActor"
+                ],
+                "membros_uobject_auditados": 0,
+                "ponteiros_crus_uobject_violadores": [],
+                "new_bruto_uobject_violadores": [],
+                "ufunctions_detectadas": 0,
+                "uproperties_detectadas": 3
+              },
+              "clang_cpp20": {
+                "binario": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\x64\\bin\\clang++.exe",
+                "exit_code": 1,
+                "zero_erros_sintaxe": false,
+                "stderr_diagnostico": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:24:2: error: unknown type name 'FID_ModularBridgeAssetActor_24_GENERATED_BODY'\r\n   24 |         GENERATED_BODY()\r\n      |         ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\temp\\ue5_stub_272f1403313e_43476\\CoreMinimal.h:41:29: note: expanded from macro 'GENERATED_BODY'\r\n   41 | #define GENERATED_BODY(...) UE_BODY_CONCAT(CURRENT_FILE_ID, _, __LINE__, _GENERATED_BODY)\r\n      |                             ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\temp\\ue5_stub_272f1403313e_43476\\CoreMinimal.h:37:36: note: expanded from macro 'UE_BODY_CONCAT'\r\n   37 | #define UE_BODY_CONCAT(A, B, C, D) UE_BODY_CONCAT_INNER(A, B, C, D)\r\n      |                                    ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\temp\\ue5_stub_272f1403313e_43476\\CoreMinimal.h:36:42: note: expanded from macro 'UE_BODY_CONCAT_INNER'\r\n   36 | #define UE_BODY_CONCAT_INNER(A, B, C, D) A##B##C##D\r\n      |                                          ^\r\n<scratch space>:108:1: note: expanded from here\r\n  108 | FID_ModularBridgeAssetActor_24_GENERATED_BODY\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:26:1: error: expected member name or ';' after declaration specifiers\r\n   24 |         GENERATED_BODY()\r\n      |         ~~~~~~~~~~~~~~~~\r\n   25 | \r\n   26 | public:\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:41:26: error: variable has incomplete type 'class MODULAR_BRIDGE_API'\r\n   41 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                          ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:41:7: note: forward declaration of 'MODULAR_BRIDGE_API'\r\n   41 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:41:51: error: expected ';' after top level declarator\r\n   41 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                                                   ^\r\n      |                                                   ;\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:41:53: error: expected unqualified-id\r\n   41 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                                                     ^\r\nIn file included from D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:81:\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:25:8: error: redefinition of 'FModularBridgeVariantRow'\r\n   25 | struct FModularBridgeVariantRow : public FTableRowBase\r\n      |        ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:22:8: note: previous definition is here\r\n   22 | struct FModularBridgeVariantRow : public FTableRowBase\r\n      |        ^\r\nIn file included from D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:81:\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:44:26: error: redefinition of 'AModularBridgeAssetActor'\r\n   44 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                          ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:41:26: note: previous definition is here\r\n   41 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                          ^\r\nIn file included from D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:81:\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:44:51: error: expected ';' after top level declarator\r\n   44 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                                                   ^\r\n      |                                                   ;\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:44:53: error: expected unqualified-id\r\n   44 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                                                     ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:114:1: error: 'AModularBridgeAssetActor' is not a class, namespace, or enumeration\r\n  114 | AModularBridgeAssetActor::AModularBridgeAssetActor()\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:44:26: note: 'AModularBridgeAssetActor' declared here\r\n   44 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                          ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:119:6: error: 'AModularBridgeAssetActor' is not a class, namespace, or enumeration\r\n  119 | void AModularBridgeAssetActor::BeginPlay()\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:44:26: note: 'AModularBridgeAssetActor' declared here\r\n   44 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                          ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:127:6: error: 'AModularBridgeAssetActor' is not a class, namespace, or enumeration\r\n  127 | bool AModularBridgeAssetActor::ValidateScale(const FVector& actualDimensions) const\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:44:26: note: 'AModularBridgeAssetActor' declared here\r\n   44 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                          ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:145:6: error: 'AModularBridgeAssetActor' is not a class, namespace, or enumeration\r\n  145 | void AModularBridgeAssetActor::AttachBridgeToPlayer()\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:44:26: note: 'AModularBridgeAssetActor' declared here\r\n   44 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                          ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.cpp:169:6: error: 'AModularBridgeAssetActor' is not a class, namespace, or enumeration\r\n  169 | void AModularBridgeAssetActor::LoadVariant_Standard()\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_A\\ModularBridgeAssetActor.h:44:26: note: 'AModularBridgeAssetActor' declared here\r\n   44 | class MODULAR_BRIDGE_API AModularBridgeAssetActor : public AActor\r\n      |                          ^\r\n14 errors generated."
+              },
+              "tentativas_loop": 3,
+              "aprovado_pass_1": false
+            }
+          }
+        }
+      ]
+    },
+    "B_KEV_1_0_Vetor_Triplo_ZeroShot": {
+      "tokens_entrada_bruta_por_desafio": [
+        6999,
+        6407,
+        6336
+      ],
+      "tokens_entregues_por_desafio": [
+        246,
+        211,
+        339
+      ],
+      "tokens_entregues_total": 796,
+      "tokens_entregues_medio": 265.3,
+      "compressao_frente_entrada_bruta_pct": 95.97,
+      "desafios_100pct_aprovados_pass_1": "0/3",
+      "desafios_100pct_aprovados": "0/3",
+      "verificadores_fisicos_aprovados_pass_1": "0/4",
+      "taxa_aprovacao_pass1_pct": 0.0,
+      "verificadores_fisicos_aprovados": "0/4",
+      "taxa_aprovacao_mecanica_real_pct": 0.0,
+      "notas_cegas_juiz_35b_por_desafio": [
+        1.5,
+        3.0,
+        0.8
+      ],
+      "nota_cega_media_juiz_35b_0_10": 1.77,
+      "latencia_pulso_emissao_por_desafio_s": [
+        11.737,
+        9.708,
+        12.441
+      ],
+      "latencia_pulso_media_s": 11.295,
+      "icc_indice_condutividade_cognitiva": 0.5907,
+      "comparacao_recorde_0150_icc_2_7828": "0.21x",
+      "vram_pico_mib": 4906,
+      "detalhes_desafios": [
+        {
+          "desafio_id": "DESAFIO-01",
+          "domain": "BLENDER_BPY",
+          "tokens_entrada_bruta": 6999,
+          "pacote_texto": "KEV/1.0 domain=BLENDER_BPY target=Modulo_01\n@SPACE{X=4.0;Y=0.4;Z=3.0}\n@GRAPH[\n  S1:MOD.bmesh_new() -> S2\n  S2:MOD.create_cube(size=1.0) -> S3\n  S3:MOD.scale_verts(X=-2.0,Y=-0.2,Z=0.0) -> S4\n  S4:MOD.convex_hull() -> S5\n]\n@GUARD[\n  !RULE-01: PROIBIDO bpy.ops.uv.smart_project sem VIEW_3D em --background (gera RuntimeError poll failed).\n  !RULE-02: PROIBIDO bmesh.ops.create_cube(bm, size=SX) seguido de v.co *= SX (gera erro 300% escala quadratica SX^2!).\n]\n@VERIFY[\n  ?bm==bmesh.new_type\n  ?cube_size==1.0\n  ?final_scale_X==-2.0\n  ?convex_hull_valid==True\n]",
+          "tokens_pacote_entregue": 246,
+          "compressao_pct": 96.49,
+          "latencia_pulso_emissao_s": 11.737,
+          "mmap_lookup_ms": 0.1972,
+          "vram_pico_emissao_mib": 4893,
+          "execucao_fisica": {
+            "aprovado_pass_1_desafio": false,
+            "aprovado_mecanico_desafio": false,
+            "verificadores_acionados": 1,
+            "verificadores_aprovados_pass_1": 0,
+            "verificadores_aprovados": 0,
+            "latencia_sintese_executor_s": 109.463,
+            "vram_pico_executor_mib": 4906,
+            "recibo_blender": {
+              "schema": "isaque.kev01.verificador_fisico_blender/1.0",
+              "blender_version": "5.2.1 LTS",
+              "script_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-01_B\\modulo_01_generated.py",
+              "aprovado_mecanico": false,
+              "exit_code": 0,
+              "zero_traceback": true,
+              "traceback": "",
+              "unit_system": "METRIC",
+              "unit_scale": 1.0,
+              "non_manifold_edges": 0,
+              "non_manifold_edges_ucx": 0,
+              "zero_area_faces": 0,
+              "normals_consistent": true,
+              "uv_unwrapped_valid": true,
+              "pivot_z_min_aligned": false,
+              "primary_origin_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "bounding_box_min_m": [
+                -2.0,
+                -1.0,
+                -1.0
+              ],
+              "bounding_box_max_m": [
+                2.0,
+                1.0,
+                3.0
+              ],
+              "bounding_box_m": [
+                4.0,
+                2.0,
+                4.0
+              ],
+              "expected_bbox_m": [
+                4.0,
+                0.4,
+                3.0
+              ],
+              "bbox_error_pct": [
+                0.0,
+                400.0,
+                33.3333
+              ],
+              "bbox_within_2pct": false,
+              "visual_meshes": [
+                {
+                  "name": "Modulo_01",
+                  "is_ucx": false,
+                  "verts": 8,
+                  "tris": 12,
+                  "origin_world_m": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "bbox_min_m": [
+                    -2.0,
+                    -0.2,
+                    0.0
+                  ],
+                  "bbox_max_m": [
+                    2.0,
+                    0.2,
+                    3.0
+                  ],
+                  "dimensions_m": [
+                    4.0,
+                    0.4,
+                    3.0
+                  ],
+                  "non_manifold_edges": 0,
+                  "zero_area_faces": 0,
+                  "zero_normals": 0,
+                  "signed_volume_m3": 4.8,
+                  "normals_outward_consistent": true,
+                  "uv_layers": 1,
+                  "uv_area_total": 0.648
+                },
+                {
+                  "name": "Cube",
+                  "is_ucx": false,
+                  "verts": 8,
+                  "tris": 12,
+                  "origin_world_m": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "bbox_min_m": [
+                    -1.0,
+                    -1.0,
+                    -1.0
+                  ],
+                  "bbox_max_m": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "dimensions_m": [
+                    2.0,
+                    2.0,
+                    2.0
+                  ],
+                  "non_manifold_edges": 0,
+                  "zero_area_faces": 0,
+                  "zero_normals": 0,
+                  "signed_volume_m3": 8.0,
+                  "normals_outward_consistent": true,
+                  "uv_layers": 1,
+                  "uv_area_total": 0.375
+                }
+              ],
+              "ucx_colliders": [
+                {
+                  "name": "UCX_Collider",
+                  "is_ucx": true,
+                  "verts": 8,
+                  "tris": 12,
+                  "origin_world_m": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "bbox_min_m": [
+                    -2.0,
+                    -0.2,
+                    0.0
+                  ],
+                  "bbox_max_m": [
+                    2.0,
+                    0.2,
+                    3.0
+                  ],
+                  "dimensions_m": [
+                    4.0,
+                    0.4,
+                    3.0
+                  ],
+                  "non_manifold_edges": 0,
+                  "zero_area_faces": 0,
+                  "zero_normals": 0,
+                  "signed_volume_m3": 4.8,
+                  "normals_outward_consistent": true,
+                  "uv_layers": 0,
+                  "uv_area_total": 0.0
+                }
+              ],
+              "sockets": [],
+              "exported_files": [
+                {
+                  "path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-01_B\\exports\\Modulo_01.glb",
+                  "format": "glb",
+                  "size_bytes": 3484,
+                  "valid_binary_header": true
+                },
+                {
+                  "path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-01_B\\exports\\Modulo_01.fbx",
+                  "format": "fbx",
+                  "size_bytes": 28988,
+                  "valid_binary_header": true
+                }
+              ],
+              "headless_workbench_render_ok": true,
+              "headless_workbench_preview": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-01_B\\exports\\audit_workbench_ortho.png",
+              "violacoes": [
+                "PIVOT_DESALINHADO: origin=[0.0, 0.0, 0.0], bbox_min=[-2.0, -1.0, -1.0] (exigido pivô (0,0,0) e Z_min=0)",
+                "BOUNDING_BOX_FORA_DE_2PCT: medido=[4.0, 2.0, 4.0] vs esperado=[4.0, 0.4, 3.0] (erro_pct=[0.0, 400.0, 33.3333])"
+              ],
+              "blender_cli_returncode": 0,
+              "latencia_verificacao_s": 1.706,
+              "tentativas_loop": 3,
+              "aprovado_pass_1": false
+            },
+            "recibo_ue5_cpp": null
+          }
+        },
+        {
+          "desafio_id": "DESAFIO-02",
+          "domain": "UE5_CPP",
+          "tokens_entrada_bruta": 6407,
+          "pacote_texto": "KEV/1.0 domain=UE5_CPP target=InteractionInventorySystem\n@SPACE{k1=UHT_ORDER;k2=GC_SAFE;k3=NO_TICK;k4=BLUEPRINT_API}\n@GRAPH[\n  S1:UHT_ORDER.check() -> S2\n]\n@GUARD[\n  !RULE-01: #include \"InteractionInventorySystem.generated.h\" deve ser o último include para injetar Super/ThisClass corretamente.\n  !RULE-02: Membros ponteiros UObject sem UPROPERTY() são coletados pelo GC; usar TObjectPtr e VisibleAnywhere.\n  !RULE-03: Componentes de ator devem desabilitar bCanEverTick se operarem via FTimerManager ou eventos, não via Tick.\n]\n@VERIFY[\n  ?UHT_ORDER==LAST_INCLUDE\n  ?GC_SAFE==TObjectPtr_USAGE\n  ?NO_TICK==bCanEverTick_FALSE\n  ?BLUEPRINT_API==DELEGATE_DEFINED\n]",
+          "tokens_pacote_entregue": 211,
+          "compressao_pct": 96.71,
+          "latencia_pulso_emissao_s": 9.708,
+          "mmap_lookup_ms": 0.0667,
+          "vram_pico_emissao_mib": 4716,
+          "execucao_fisica": {
+            "aprovado_pass_1_desafio": false,
+            "aprovado_mecanico_desafio": false,
+            "verificadores_acionados": 1,
+            "verificadores_aprovados_pass_1": 0,
+            "verificadores_aprovados": 0,
+            "latencia_sintese_executor_s": 110.985,
+            "vram_pico_executor_mib": 4719,
+            "recibo_blender": null,
+            "recibo_ue5_cpp": {
+              "schema": "isaque.kev01.verificador_fisico_ue5_cpp/1.0",
+              "header_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.h",
+              "source_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp",
+              "aprovado_mecanico": false,
+              "invariantes_8_de_8": {
+                "inv_01_pragma_once": true,
+                "inv_02_generated_h_ultimo_include": true,
+                "inv_03_uclass_ou_ustruct_presente": true,
+                "inv_04_generated_body_pareado": true,
+                "inv_05_zero_ponteiro_uobject_cru_sem_gc": true,
+                "inv_06_zero_new_bruto_em_uobject": true,
+                "inv_07_ciclo_vida_e_macros_ue5_validos": true,
+                "inv_08_clang_cpp20_fsyntax_only_zero_erros": false
+              },
+              "violacoes": [
+                "INV-08: clang++ -fsyntax-only -std=c++20 retornou exit=1: D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:9:1: error: use of undeclared identifier 'UInteractionInventoryComponent'\r\n    9 | UInteractionInventoryComponent::UInteractionInventoryComponent()\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:15:6: error: use of undeclared identifier 'UInteractionInventoryComponent'\r\n   15 | bool UInteractionInventoryComponent::AddItem(FName ItemId, int32 Quantity)\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:15:46: error: unknown type name 'FName'\r\n   15 | bool UInteractionInventoryComponent::AddItem(FName ItemId, int32 Quantity)\r\n      |                                              ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:15:60: error: unknown type name 'int32'\r\n   15 | bool UInteractionInventoryComponent::AddItem(FName ItemId, int32 Quantity)\r\n      |                                                            ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:44:1: error: unknown type name 'int32'\r\n   44 | int32 UInteractionInventoryComponent::GetItemQuantity(FName ItemId) const\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:44:7: error: use of undeclared identifier 'UInteractionInventoryComponent'\r\n   44 | int32 UInteractionInventoryComponent::GetItemQuantity(FName ItemId) const\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:44:55: error: unknown type name 'FName'\r\n   44 | int32 UInteractionInventoryComponent::GetItemQuantity(FName ItemId) const\r\n      |                                                       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:56:6: error: use of undeclared identifier 'UInteractionInventoryComponent'\r\n   56 | bool UInteractionInventoryComponent::TryInteractWithActor(AInteractableWorldActor* TargetActor)\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:82:1: error: incomplete type 'AInteractableWorldActor' named in nested name specifier\r\n   82 | AInteractableWorldActor::AInteractableWorldActor()\r\n      | ^~~~~~~~~~~~~~~~~~~~~~~~~\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:3:7: note: forward declaration of 'AInteractableWorldActor'\r\n    3 | class AInteractableWorldActor;\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:89:6: error: incomplete type 'AInteractableWorldActor' named in nested name specifier\r\n   89 | bool AInteractableWorldActor::CanInteract() const\r\n      |      ^~~~~~~~~~~~~~~~~~~~~~~~~\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:3:7: note: forward declaration of 'AInteractableWorldActor'\r\n    3 | class AInteractableWorldActor;\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:94:6: error: incomplete type 'AInteractableWorldActor' named in nested name specifier\r\n   94 | bool AInteractableWorldActor::ExecuteInteraction(AActor* Interactor, UInteractionInventoryComponent* InventoryComp)\r\n      |      ^~~~~~~~~~~~~~~~~~~~~~~~~\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:3:7: note: forward declaration of 'AInteractableWorldActor'\r\n    3 | class AInteractableWorldActor;\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:94:50: error: unknown type name 'AActor'\r\n   94 | bool AInteractableWorldActor::ExecuteInteraction(AActor* Interactor, UInteractionInventoryComponent* InventoryComp)\r\n      |                                                  ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:94:70: error: unknown type name 'UInteractionInventoryComponent'\r\n   94 | bool AInteractableWorldActor::ExecuteInteraction(AActor* Interactor, UInteractionInventoryComponent* InventoryComp)\r\n      |                                                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:115:6: error: incomplete type 'AInteractableWorldActor' named in nested name specifier\r\n  115 | void AInteractableWorldActor::EndPlay(const EEndPlayReason::Type Reason) override\r\n      |      ^~~~~~~~~~~~~~~~~~~~~~~~~\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:3:7: note: forward declaration of 'AInteractableWorldActor'\r\n    3 | class AInteractableWorldActor;\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:115:45: error: use of undeclared identifier 'EEndPlayReason'\r\n  115 | void AInteractableWorldActor::EndPlay(const EEndPlayReason::Type Reason) override\r\n      |                                             ^\r\n15 errors generated."
+              ],
+              "ast_telemetria": {
+                "header_ast_errors": 26,
+                "source_ast_errors": 0,
+                "includes_header_ordem": [
+                  "CoreMinimal.h",
+                  "Components/ActorComponent.h",
+                  "Components/StaticMeshComponent.h",
+                  "Components/SphereComponent.h",
+                  "GameFramework/Actor.h",
+                  "TimerManager.h",
+                  "InteractionInventorySystem.generated.h"
+                ],
+                "tipos_refletidos": [
+                  "USTRUCT:FInventorySlotEntry",
+                  "UCLASS:UInteractionInventoryComponent",
+                  "UCLASS:AInteractableWorldActor"
+                ],
+                "membros_uobject_auditados": 2,
+                "ponteiros_crus_uobject_violadores": [],
+                "new_bruto_uobject_violadores": [],
+                "ufunctions_detectadas": 5,
+                "uproperties_detectadas": 14
+              },
+              "clang_cpp20": {
+                "binario": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\x64\\bin\\clang++.exe",
+                "exit_code": 1,
+                "zero_erros_sintaxe": false,
+                "stderr_diagnostico": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:9:1: error: use of undeclared identifier 'UInteractionInventoryComponent'\r\n    9 | UInteractionInventoryComponent::UInteractionInventoryComponent()\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:15:6: error: use of undeclared identifier 'UInteractionInventoryComponent'\r\n   15 | bool UInteractionInventoryComponent::AddItem(FName ItemId, int32 Quantity)\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:15:46: error: unknown type name 'FName'\r\n   15 | bool UInteractionInventoryComponent::AddItem(FName ItemId, int32 Quantity)\r\n      |                                              ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:15:60: error: unknown type name 'int32'\r\n   15 | bool UInteractionInventoryComponent::AddItem(FName ItemId, int32 Quantity)\r\n      |                                                            ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:44:1: error: unknown type name 'int32'\r\n   44 | int32 UInteractionInventoryComponent::GetItemQuantity(FName ItemId) const\r\n      | ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:44:7: error: use of undeclared identifier 'UInteractionInventoryComponent'\r\n   44 | int32 UInteractionInventoryComponent::GetItemQuantity(FName ItemId) const\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:44:55: error: unknown type name 'FName'\r\n   44 | int32 UInteractionInventoryComponent::GetItemQuantity(FName ItemId) const\r\n      |                                                       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:56:6: error: use of undeclared identifier 'UInteractionInventoryComponent'\r\n   56 | bool UInteractionInventoryComponent::TryInteractWithActor(AInteractableWorldActor* TargetActor)\r\n      |      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:82:1: error: incomplete type 'AInteractableWorldActor' named in nested name specifier\r\n   82 | AInteractableWorldActor::AInteractableWorldActor()\r\n      | ^~~~~~~~~~~~~~~~~~~~~~~~~\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:3:7: note: forward declaration of 'AInteractableWorldActor'\r\n    3 | class AInteractableWorldActor;\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:89:6: error: incomplete type 'AInteractableWorldActor' named in nested name specifier\r\n   89 | bool AInteractableWorldActor::CanInteract() const\r\n      |      ^~~~~~~~~~~~~~~~~~~~~~~~~\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:3:7: note: forward declaration of 'AInteractableWorldActor'\r\n    3 | class AInteractableWorldActor;\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:94:6: error: incomplete type 'AInteractableWorldActor' named in nested name specifier\r\n   94 | bool AInteractableWorldActor::ExecuteInteraction(AActor* Interactor, UInteractionInventoryComponent* InventoryComp)\r\n      |      ^~~~~~~~~~~~~~~~~~~~~~~~~\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:3:7: note: forward declaration of 'AInteractableWorldActor'\r\n    3 | class AInteractableWorldActor;\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:94:50: error: unknown type name 'AActor'\r\n   94 | bool AInteractableWorldActor::ExecuteInteraction(AActor* Interactor, UInteractionInventoryComponent* InventoryComp)\r\n      |                                                  ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:94:70: error: unknown type name 'UInteractionInventoryComponent'\r\n   94 | bool AInteractableWorldActor::ExecuteInteraction(AActor* Interactor, UInteractionInventoryComponent* InventoryComp)\r\n      |                                                                      ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:115:6: error: incomplete type 'AInteractableWorldActor' named in nested name specifier\r\n  115 | void AInteractableWorldActor::EndPlay(const EEndPlayReason::Type Reason) override\r\n      |      ^~~~~~~~~~~~~~~~~~~~~~~~~\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:3:7: note: forward declaration of 'AInteractableWorldActor'\r\n    3 | class AInteractableWorldActor;\r\n      |       ^\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_B\\InteractionInventorySystem.cpp:115:45: error: use of undeclared identifier 'EEndPlayReason'\r\n  115 | void AInteractableWorldActor::EndPlay(const EEndPlayReason::Type Reason) override\r\n      |                                             ^\r\n15 errors generated."
+              },
+              "tentativas_loop": 3,
+              "aprovado_pass_1": false
+            }
+          }
+        },
+        {
+          "desafio_id": "DESAFIO-03",
+          "domain": "BRIDGE_3D",
+          "tokens_entrada_bruta": 6336,
+          "pacote_texto": "KEV/1.0 domain=BRIDGE_3D target=ModularBridgeAssetActor\n@SPACE{k1=Var_01_Standard;k2=Socket_Muzzle;k3=Socket_Grip}\n@GRAPH[\n  S1:MOD.bmesh.scale_length(v1=1.0) -> S2\n  S2:MOD.bmesh.create_variants(p1=Var_01_Standard,p2=Var_02_Compact,p3=Var_03_Heavy) -> S3\n  S3:MOD.bmesh.add_sockets(p1=Socket_Muzzle,p2=Socket_Grip) -> S4\n  S4:MOD.bmesh.export_meshes(p1=glb,p2=fbx,format=UCX_Var_01_Standard_01) -> S5\n]\n@GUARD[\n  !RULE-01: Blender escala METRIC (Z-up) deve ser 1.0m, nunca centímetros; Var_03_Heavy tem dimensões 1.25m x 0.18m x 0.32m.\n  !RULE-02: Sockets Socket_Muzzle e Socket_Grip devem usar SnapToTargetNotIncludingScale para evitar herança de escala não uniforme do FBX/glTF.\n]\n@VERIFY[\n  ?FModularBridgeVariantRow==public_FTableRowBase\n  ?ExpectedDimensionsMeters==1.00\n  ?Socket_MuzzleName==\"Socket_Muzzle\"\n  ?SnapToTargetNotIncludingScale==true\n]",
+          "tokens_pacote_entregue": 339,
+          "compressao_pct": 94.65,
+          "latencia_pulso_emissao_s": 12.441,
+          "mmap_lookup_ms": 0.0534,
+          "vram_pico_emissao_mib": 4674,
+          "execucao_fisica": {
+            "aprovado_pass_1_desafio": false,
+            "aprovado_mecanico_desafio": false,
+            "verificadores_acionados": 2,
+            "verificadores_aprovados_pass_1": 0,
+            "verificadores_aprovados": 0,
+            "latencia_sintese_executor_s": 192.977,
+            "vram_pico_executor_mib": 4691,
+            "recibo_blender": {
+              "schema": "isaque.kev01.verificador_fisico_blender/1.0",
+              "blender_version": "5.2.1 LTS",
+              "script_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_B\\modularbridgeassetactor_generated.py",
+              "aprovado_mecanico": false,
+              "exit_code": 1,
+              "zero_traceback": false,
+              "traceback": "Traceback (most recent call last):\n  File \"D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\temp\\blender_audit_32b2ym7b\\_inner_bmesh_audit.py\", line 33, in <module>\n    runpy.run_path(str(target_script), run_name=\"__main__\")\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 287, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_B\\modularbridgeassetactor_generated.py\", line 15, in <module>\n    'Socket_Muzzle': (mathutils.Vector(0.0, 0.0, 1.5), mathutils.Quaternion.identity()),\n                      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^\nTypeError: mathutils.Vector(): takes at most 1 argument (3 given)\n",
+              "unit_system": "METRIC",
+              "unit_scale": 1.0,
+              "non_manifold_edges": 0,
+              "non_manifold_edges_ucx": 0,
+              "zero_area_faces": 0,
+              "normals_consistent": true,
+              "uv_unwrapped_valid": true,
+              "pivot_z_min_aligned": false,
+              "primary_origin_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "bounding_box_min_m": [
+                -1.0,
+                -1.0,
+                -1.0
+              ],
+              "bounding_box_max_m": [
+                1.0,
+                1.0,
+                1.0
+              ],
+              "bounding_box_m": [
+                2.0,
+                2.0,
+                2.0
+              ],
+              "expected_bbox_m": [
+                1.0,
+                0.16,
+                0.28
+              ],
+              "bbox_error_pct": [
+                100.0,
+                1150.0,
+                614.2857
+              ],
+              "bbox_within_2pct": false,
+              "visual_meshes": [
+                {
+                  "name": "Cube",
+                  "is_ucx": false,
+                  "verts": 8,
+                  "tris": 12,
+                  "origin_world_m": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "bbox_min_m": [
+                    -1.0,
+                    -1.0,
+                    -1.0
+                  ],
+                  "bbox_max_m": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ],
+                  "dimensions_m": [
+                    2.0,
+                    2.0,
+                    2.0
+                  ],
+                  "non_manifold_edges": 0,
+                  "zero_area_faces": 0,
+                  "zero_normals": 0,
+                  "signed_volume_m3": 8.0,
+                  "normals_outward_consistent": true,
+                  "uv_layers": 1,
+                  "uv_area_total": 0.375
+                }
+              ],
+              "ucx_colliders": [],
+              "sockets": [],
+              "exported_files": [],
+              "headless_workbench_render_ok": true,
+              "headless_workbench_preview": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_B\\exports\\audit_workbench_ortho.png",
+              "violacoes": [
+                "EXECUCAO_FALHOU: exit=1 traceback=File \"<frozen runpy>\", line 88, in _run_code\n  File \"D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_B\\modularbridgeassetactor_generated.py\", line 15, in <module>\n    'Socket_Muzzle': (mathutils.Vector(0.0, 0.0, 1.5), mathutils.Quaternion.identity()),\n                      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^\nTypeError: mathutils.Vector(): takes at most 1 argument (3 given)\n",
+                "VARIACOES_INSUFICIENTES: esperado >= 3 malhas visuais, obteve 1",
+                "UCX_INVALIDO: ucx_count=0, non_manifold_ucx=0",
+                "PIVOT_DESALINHADO: origin=[0.0, 0.0, 0.0], bbox_min=[-1.0, -1.0, -1.0] (exigido pivô (0,0,0) e Z_min=0)",
+                "BOUNDING_BOX_FORA_DE_2PCT: medido=[2.0, 2.0, 2.0] vs esperado=[1.0, 0.16, 0.28] (erro_pct=[100.0, 1150.0, 614.2857])",
+                "SOCKETS_AUSENTES: requeridos=['Socket_Muzzle', 'Socket_Grip'], encontrados=[]",
+                "EXPORT_GLB_FBX_AUSENTE: nenhum arquivo .glb/.fbx válido gravado em disco"
+              ],
+              "blender_cli_returncode": 0,
+              "latencia_verificacao_s": 1.586,
+              "tentativas_loop": 3,
+              "aprovado_pass_1": false
+            },
+            "recibo_ue5_cpp": {
+              "schema": "isaque.kev01.verificador_fisico_ue5_cpp/1.0",
+              "header_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_B\\ModularBridgeAssetActor.h",
+              "source_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_B\\ModularBridgeAssetActor.cpp",
+              "aprovado_mecanico": false,
+              "invariantes_8_de_8": {
+                "inv_01_pragma_once": true,
+                "inv_02_generated_h_ultimo_include": true,
+                "inv_03_uclass_ou_ustruct_presente": true,
+                "inv_04_generated_body_pareado": true,
+                "inv_05_zero_ponteiro_uobject_cru_sem_gc": true,
+                "inv_06_zero_new_bruto_em_uobject": true,
+                "inv_07_ciclo_vida_e_macros_ue5_validos": true,
+                "inv_08_clang_cpp20_fsyntax_only_zero_erros": false
+              },
+              "violacoes": [
+                "INV-08: clang++ -fsyntax-only -std=c++20 retornou exit=1: D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_B\\ModularBridgeAssetActor.cpp:14:91: error: too many arguments to function call, expected at most 2, have 3\r\n   14 |     MuzzleModuleComponent->SetupAttachment(ReceiverMeshComponent, FName(\"Socket_Muzzle\"), FAttachmentTransformRules::SnapToTargetNotIncludingScale);\r\n      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\temp\\ue5_stub_13eebb11e1d6_33904\\CoreMinimal.h:527:10: note: 'SetupAttachment' declared here\r\n  527 |     void SetupAttachment(USceneComponent* InParent, FName InSocketName = NAME_None) { (void)InParent; (void)InSocketName; }\r\n      |          ^               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_B\\ModularBridgeAssetActor.cpp:17:87: error: too many arguments to function call, expected at most 2, have 3\r\n   17 |     GripModuleComponent->SetupAttachment(ReceiverMeshComponent, FName(\"Socket_Grip\"), FAttachmentTransformRules::SnapToTargetNotIncludingScale);\r\n      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\temp\\ue5_stub_13eebb11e1d6_33904\\CoreMinimal.h:527:10: note: 'SetupAttachment' declared here\r\n  527 |     void SetupAttachment(USceneComponent* InParent, FName InSocketName = NAME_None) { (void)InParent; (void)InSocketName; }\r\n      |          ^               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n2 errors generated."
+              ],
+              "ast_telemetria": {
+                "header_ast_errors": 17,
+                "source_ast_errors": 0,
+                "includes_header_ordem": [
+                  "CoreMinimal.h",
+                  "Engine/DataTable.h",
+                  "Components/StaticMeshComponent.h",
+                  "GameFramework/Actor.h",
+                  "ModularBridgeAssetActor.generated.h"
+                ],
+                "tipos_refletidos": [
+                  "USTRUCT:FModularBridgeVariantRow",
+                  "UCLASS:AModularBridgeAssetActor"
+                ],
+                "membros_uobject_auditados": 5,
+                "ponteiros_crus_uobject_violadores": [],
+                "new_bruto_uobject_violadores": [],
+                "ufunctions_detectadas": 2,
+                "uproperties_detectadas": 10
+              },
+              "clang_cpp20": {
+                "binario": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\x64\\bin\\clang++.exe",
+                "exit_code": 1,
+                "zero_erros_sintaxe": false,
+                "stderr_diagnostico": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_B\\ModularBridgeAssetActor.cpp:14:91: error: too many arguments to function call, expected at most 2, have 3\r\n   14 |     MuzzleModuleComponent->SetupAttachment(ReceiverMeshComponent, FName(\"Socket_Muzzle\"), FAttachmentTransformRules::SnapToTargetNotIncludingScale);\r\n      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\temp\\ue5_stub_13eebb11e1d6_33904\\CoreMinimal.h:527:10: note: 'SetupAttachment' declared here\r\n  527 |     void SetupAttachment(USceneComponent* InParent, FName InSocketName = NAME_None) { (void)InParent; (void)InSocketName; }\r\n      |          ^               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_B\\ModularBridgeAssetActor.cpp:17:87: error: too many arguments to function call, expected at most 2, have 3\r\n   17 |     GripModuleComponent->SetupAttachment(ReceiverMeshComponent, FName(\"Socket_Grip\"), FAttachmentTransformRules::SnapToTargetNotIncludingScale);\r\n      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\nD:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\temp\\ue5_stub_13eebb11e1d6_33904\\CoreMinimal.h:527:10: note: 'SetupAttachment' declared here\r\n  527 |     void SetupAttachment(USceneComponent* InParent, FName InSocketName = NAME_None) { (void)InParent; (void)InSocketName; }\r\n      |          ^               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n2 errors generated."
+              },
+              "tentativas_loop": 3,
+              "aprovado_pass_1": false
+            }
+          }
+        }
+      ]
+    },
+    "C_KEV_1_0_Vetor_Triplo_DoRA_OLoRA_PosTreino": {
+      "tokens_entrada_bruta_por_desafio": [
+        6999,
+        6407,
+        6336
+      ],
+      "tokens_entregues_por_desafio": [
+        456,
+        419,
+        458
+      ],
+      "tokens_entregues_total": 1333,
+      "tokens_entregues_medio": 444.3,
+      "compressao_frente_entrada_bruta_pct": 93.25,
+      "desafios_100pct_aprovados_pass_1": "2/3",
+      "desafios_100pct_aprovados": "3/3",
+      "verificadores_fisicos_aprovados_pass_1": "3/4",
+      "taxa_aprovacao_pass1_pct": 75.0,
+      "verificadores_fisicos_aprovados": "4/4",
+      "taxa_aprovacao_mecanica_real_pct": 100.0,
+      "notas_cegas_juiz_35b_por_desafio": [
+        9.5,
+        10.0,
+        9.5
+      ],
+      "nota_cega_media_juiz_35b_0_10": 9.67,
+      "latencia_pulso_emissao_por_desafio_s": [
+        18.447,
+        14.969,
+        17.955
+      ],
+      "latencia_pulso_media_s": 17.124,
+      "icc_indice_condutividade_cognitiva": 1.271,
+      "comparacao_recorde_0150_icc_2_7828": "0.46x",
+      "vram_pico_mib": 5205,
+      "detalhes_desafios": [
+        {
+          "desafio_id": "DESAFIO-01",
+          "domain": "BLENDER_BPY",
+          "tokens_entrada_bruta": 6999,
+          "pacote_texto": "KEV/1.0 domain=BLENDER_BPY target=Modulo_01\n@SPACE{unit=METRIC;scale=1.0;up=Z;size_x=4.0;size_y=0.4;size_z=3.0;pivot_z_min=0.0;collider=UCX_Modulo_01}\n@GRAPH[\n  S1:BMESH.init_metric(scale=1.0,empty=true) -> S2\n  S2:BMESH.create_cube_and_inset(sx=4.0,sy=0.4,sz=3.0,z_min=0.0,inset_depth=-0.08,mesh_name=Modulo_01) -> S3\n  S3:BMESH.loops_uv_verify_grid(outward=true,overlap=0.0,mesh_name=Modulo_01) -> S4\n  S4:BMESH.convex_hull_collider(name=UCX_Modulo_01,sx=4.0,sy=0.4,sz=3.0,z_min=0.0,manifold=true) -> S5\n  S5:IO.export_assets(glb=\"Modulo_01.glb\",fbx=\"Modulo_01.fbx\",dir=os.environ.getKEV_EXPORT_DIR)\n]\n@GUARD[\n  !NO-VIEW3D-OPS: Construir geometria e UVs exclusivamente via bmesh e bm.loops.layers.uv.verify sem depender de janela 3D ativa\n  !MANIFOLD-UCX: Garantir non_manifold_edges==0 e recalc_face_normals no colisor UCX_Modulo_01 da Unreal Engine 5\n  !PIVOT-ORIGIN-Z0: Manter origin em (0,0,0) e base apoiada em Z_min=0.0 dentro de +-2% da AABB oficial\n]\n@VERIFY[\n  ?non_manifold_edges==0\n  ?zero_area_faces==0\n  ?unit_scale==1.0\n  ?bbox_tol_pct<=2.0\n]",
+          "tokens_pacote_entregue": 456,
+          "compressao_pct": 93.48,
+          "latencia_pulso_emissao_s": 18.447,
+          "mmap_lookup_ms": 0.0588,
+          "vram_pico_emissao_mib": 5205,
+          "execucao_fisica": {
+            "aprovado_pass_1_desafio": false,
+            "aprovado_mecanico_desafio": true,
+            "verificadores_acionados": 1,
+            "verificadores_aprovados_pass_1": 0,
+            "verificadores_aprovados": 1,
+            "latencia_sintese_executor_s": 41.858,
+            "vram_pico_executor_mib": 5115,
+            "recibo_blender": {
+              "schema": "isaque.kev01.verificador_fisico_blender/1.0",
+              "blender_version": "5.2.1 LTS",
+              "script_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-01_C\\modulo_01_generated.py",
+              "aprovado_mecanico": true,
+              "exit_code": 0,
+              "zero_traceback": true,
+              "traceback": "",
+              "unit_system": "METRIC",
+              "unit_scale": 1.0,
+              "non_manifold_edges": 0,
+              "non_manifold_edges_ucx": 0,
+              "zero_area_faces": 0,
+              "normals_consistent": true,
+              "uv_unwrapped_valid": true,
+              "pivot_z_min_aligned": true,
+              "primary_origin_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "bounding_box_min_m": [
+                -2.0,
+                -0.2,
+                0.0
+              ],
+              "bounding_box_max_m": [
+                2.0,
+                0.2,
+                3.0
+              ],
+              "bounding_box_m": [
+                4.0,
+                0.4,
+                3.0
+              ],
+              "expected_bbox_m": [
+                4.0,
+                0.4,
+                3.0
+              ],
+              "bbox_error_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "bbox_within_2pct": true,
+              "visual_meshes": [
+                {
+                  "name": "Modulo_01",
+                  "is_ucx": false,
+                  "verts": 16,
+                  "tris": 28,
+                  "origin_world_m": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "bbox_min_m": [
+                    -2.0,
+                    -0.2,
+                    0.0
+                  ],
+                  "bbox_max_m": [
+                    2.0,
+                    0.2,
+                    3.0
+                  ],
+                  "dimensions_m": [
+                    4.0,
+                    0.4,
+                    3.0
+                  ],
+                  "non_manifold_edges": 0,
+                  "zero_area_faces": 0,
+                  "zero_normals": 0,
+                  "signed_volume_m3": 4.8,
+                  "normals_outward_consistent": true,
+                  "uv_layers": 1,
+                  "uv_area_total": 0.6174
+                }
+              ],
+              "ucx_colliders": [
+                {
+                  "name": "UCX_Modulo_01",
+                  "is_ucx": true,
+                  "verts": 8,
+                  "tris": 12,
+                  "origin_world_m": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "bbox_min_m": [
+                    -2.0,
+                    -0.2,
+                    0.0
+                  ],
+                  "bbox_max_m": [
+                    2.0,
+                    0.2,
+                    3.0
+                  ],
+                  "dimensions_m": [
+                    4.0,
+                    0.4,
+                    3.0
+                  ],
+                  "non_manifold_edges": 0,
+                  "zero_area_faces": 0,
+                  "zero_normals": 0,
+                  "signed_volume_m3": 4.8,
+                  "normals_outward_consistent": true,
+                  "uv_layers": 0,
+                  "uv_area_total": 0.0
+                }
+              ],
+              "sockets": [],
+              "exported_files": [
+                {
+                  "path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-01_C\\exports\\Modulo_01.glb",
+                  "format": "glb",
+                  "size_bytes": 4120,
+                  "valid_binary_header": true
+                },
+                {
+                  "path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-01_C\\exports\\Modulo_01.fbx",
+                  "format": "fbx",
+                  "size_bytes": 13532,
+                  "valid_binary_header": true
+                }
+              ],
+              "headless_workbench_render_ok": true,
+              "headless_workbench_preview": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-01_C\\exports\\audit_workbench_ortho.png",
+              "violacoes": [],
+              "blender_cli_returncode": 0,
+              "latencia_verificacao_s": 1.792,
+              "tentativas_loop": 2,
+              "aprovado_pass_1": false
+            },
+            "recibo_ue5_cpp": null
+          }
+        },
+        {
+          "desafio_id": "DESAFIO-02",
+          "domain": "UE5_CPP",
+          "tokens_entrada_bruta": 6407,
+          "pacote_texto": "KEV/1.0 domain=UE5_CPP target=InteractionInventorySystem\n@SPACE{unit=CM;scale=100.0;up=Z;max_dist_cm=250.0;cooldown_s=1.5;tick_rate_hz=60.0;mesh=TObjectPtr_UStaticMeshComponent;display_mesh=TObjectPtr_UStaticMeshComponent;interaction_sphere=TObjectPtr_USphereComponent}\n@GRAPH[\n  S1:UHT.header_order(pragma_once=true,last_include=\"InteractionInventorySystem.generated.h\") -> S2\n  S2:UHT.delegates_and_struct(multicast=true,blueprint_assignable=true,tick_rate=60.0) -> S3\n  S3:UCLASS.component(name=UInteractionInventoryComponent,base=UActorComponent,tick=false,mesh=TObjectPtr_UStaticMeshComponent,timer=FTimerHandle,sphere=TObjectPtr_USphereComponent) -> S4\n  S4:AINTERACTOR.actor(name=AInteractableWorldActor,base=AActor,tick=false,mesh=TObjectPtr_UStaticMeshComponent,timer=FTimerHandle,sphere=TObjectPtr_USphereComponent)\n]\n@GUARD[\n  !UHT-LAST-INCLUDE: Incluir InteractionInventorySystem.generated.h estritamente por ultimo no header sem violar UHT order\n  !GC-SAFE-TOBJECTPTR: Declarar todo membro UObject/AActor/UActorComponent com UPROPERTY(...) e TObjectPtr<T> no construtor\n  !NO-RAW-NEW-UOBJECT: Instanciar componentes via CreateDefaultSubobject<T> no construtor sem new bruto\n  !TIMER-NO-TICK: Desativar bCanEverTick em PrimaryComponentTick e PrimaryActorTick, limpar timer no EndPlay\n]\n@VERIFY[\n  ?generated_h_last==1\n  ?raw_uobject_ptrs==0\n  ?raw_new_uobject==0\n  ?clang_cpp20_errors==0\n]",
+          "tokens_pacote_entregue": 419,
+          "compressao_pct": 93.46,
+          "latencia_pulso_emissao_s": 14.969,
+          "mmap_lookup_ms": 0.0577,
+          "vram_pico_emissao_mib": 4988,
+          "execucao_fisica": {
+            "aprovado_pass_1_desafio": true,
+            "aprovado_mecanico_desafio": true,
+            "verificadores_acionados": 1,
+            "verificadores_aprovados_pass_1": 1,
+            "verificadores_aprovados": 1,
+            "latencia_sintese_executor_s": 43.642,
+            "vram_pico_executor_mib": 5005,
+            "recibo_blender": null,
+            "recibo_ue5_cpp": {
+              "schema": "isaque.kev01.verificador_fisico_ue5_cpp/1.0",
+              "header_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_C\\InteractionInventorySystem.h",
+              "source_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-02_C\\InteractionInventorySystem.cpp",
+              "aprovado_mecanico": true,
+              "invariantes_8_de_8": {
+                "inv_01_pragma_once": true,
+                "inv_02_generated_h_ultimo_include": true,
+                "inv_03_uclass_ou_ustruct_presente": true,
+                "inv_04_generated_body_pareado": true,
+                "inv_05_zero_ponteiro_uobject_cru_sem_gc": true,
+                "inv_06_zero_new_bruto_em_uobject": true,
+                "inv_07_ciclo_vida_e_macros_ue5_validos": true,
+                "inv_08_clang_cpp20_fsyntax_only_zero_erros": true
+              },
+              "violacoes": [],
+              "ast_telemetria": {
+                "header_ast_errors": 24,
+                "source_ast_errors": 0,
+                "includes_header_ordem": [
+                  "CoreMinimal.h",
+                  "Components/ActorComponent.h",
+                  "Components/StaticMeshComponent.h",
+                  "Components/SphereComponent.h",
+                  "GameFramework/Actor.h",
+                  "TimerManager.h",
+                  "InteractionInventorySystem.generated.h"
+                ],
+                "tipos_refletidos": [
+                  "USTRUCT:FInventorySlotEntry",
+                  "UCLASS:UInteractionInventoryComponent",
+                  "UCLASS:AInteractableWorldActor"
+                ],
+                "membros_uobject_auditados": 2,
+                "ponteiros_crus_uobject_violadores": [],
+                "new_bruto_uobject_violadores": [],
+                "ufunctions_detectadas": 5,
+                "uproperties_detectadas": 12
+              },
+              "clang_cpp20": {
+                "binario": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\x64\\bin\\clang++.exe",
+                "exit_code": 0,
+                "zero_erros_sintaxe": true,
+                "stderr_diagnostico": ""
+              },
+              "tentativas_loop": 1,
+              "aprovado_pass_1": true
+            }
+          }
+        },
+        {
+          "desafio_id": "DESAFIO-03",
+          "domain": "BRIDGE_3D",
+          "tokens_entrada_bruta": 6336,
+          "pacote_texto": "KEV/1.0 domain=BRIDGE_3D target=ModularBridgeAssetActor\n@SPACE{blender_unit=METRIC;ue5_unit=CM;meter_to_cm=100.0;up=Z;variations=3;sx=1.0;sy=0.16;sz=0.28;socket_a=Socket_Muzzle;socket_b=Socket_Grip;collider=UCX_Var_01_Standard_01}\n@GRAPH[\n  S1:BLENDER.build_3_variations_bmesh(v1_x=1.0,v2_x=0.8,v3_x=1.25,sy=0.16,sz=0.28,z_min=0.0,mesh_type=2) -> S2\n  S2:BLENDER.attach_sockets_and_collider(muzzle=Socket_Muzzle,grip=Socket_Grip,ucx=UCX_Var_01_Standard_01,tick=false) -> S3\n  S3:BLENDER.export_glb_fbx(glb=\"ModularBridgePack.glb\",fbx=\"ModularBridgePack.fbx\") -> S4\n  S4:UE5.ustruct_datatable_row(name=FModularBridgeVariantRow,meter_to_cm=100.0,tick=false) -> S5\n  S5:UE5.actor_socket_validator(actor=AModularBridgeAssetActor,rule=SnapToTargetNotIncludingScale,tol_pct=2.0)\n]\n@GUARD[\n  !SCALE-1M-100CM: Multiplicar dimensoes em metros do Blender por 100.0 para validar FBox em centimetros no UE5 (±2%)\n  !SOCKET-EXACT-NAMES: Preservar literalmente Socket_Muzzle e Socket_Grip no Blender e no DoesSocketExist do C++\n]\n@VERIFY[\n  ?variations==3\n  ?non_manifold_edges==0\n  ?meter_to_cm==100.0\n  ?clang_cpp20_errors==0\n]",
+          "tokens_pacote_entregue": 458,
+          "compressao_pct": 92.77,
+          "latencia_pulso_emissao_s": 17.955,
+          "mmap_lookup_ms": 0.0615,
+          "vram_pico_emissao_mib": 4988,
+          "execucao_fisica": {
+            "aprovado_pass_1_desafio": true,
+            "aprovado_mecanico_desafio": true,
+            "verificadores_acionados": 2,
+            "verificadores_aprovados_pass_1": 2,
+            "verificadores_aprovados": 2,
+            "latencia_sintese_executor_s": 54.346,
+            "vram_pico_executor_mib": 5008,
+            "recibo_blender": {
+              "schema": "isaque.kev01.verificador_fisico_blender/1.0",
+              "blender_version": "5.2.1 LTS",
+              "script_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_C\\modularbridgeassetactor_generated.py",
+              "aprovado_mecanico": true,
+              "exit_code": 0,
+              "zero_traceback": true,
+              "traceback": "",
+              "unit_system": "METRIC",
+              "unit_scale": 1.0,
+              "non_manifold_edges": 0,
+              "non_manifold_edges_ucx": 0,
+              "zero_area_faces": 0,
+              "normals_consistent": true,
+              "uv_unwrapped_valid": true,
+              "pivot_z_min_aligned": true,
+              "primary_origin_m": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "bounding_box_min_m": [
+                -0.5,
+                -0.08,
+                0.0
+              ],
+              "bounding_box_max_m": [
+                0.5,
+                0.08,
+                0.28
+              ],
+              "bounding_box_m": [
+                1.0,
+                0.16,
+                0.28
+              ],
+              "expected_bbox_m": [
+                1.0,
+                0.16,
+                0.28
+              ],
+              "bbox_error_pct": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "bbox_within_2pct": true,
+              "visual_meshes": [
+                {
+                  "name": "Var_01_Standard",
+                  "is_ucx": false,
+                  "verts": 8,
+                  "tris": 12,
+                  "origin_world_m": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "bbox_min_m": [
+                    -0.5,
+                    -0.08,
+                    0.0
+                  ],
+                  "bbox_max_m": [
+                    0.5,
+                    0.08,
+                    0.28
+                  ],
+                  "dimensions_m": [
+                    1.0,
+                    0.16,
+                    0.28
+                  ],
+                  "non_manifold_edges": 0,
+                  "zero_area_faces": 0,
+                  "zero_normals": 0,
+                  "signed_volume_m3": 0.0448,
+                  "normals_outward_consistent": true,
+                  "uv_layers": 1,
+                  "uv_area_total": 0.648
+                },
+                {
+                  "name": "Var_02_Compact",
+                  "is_ucx": false,
+                  "verts": 8,
+                  "tris": 12,
+                  "origin_world_m": [
+                    0.0,
+                    0.65,
+                    0.0
+                  ],
+                  "bbox_min_m": [
+                    -0.4,
+                    0.57,
+                    0.0
+                  ],
+                  "bbox_max_m": [
+                    0.4,
+                    0.73,
+                    0.28
+                  ],
+                  "dimensions_m": [
+                    0.8,
+                    0.16,
+                    0.28
+                  ],
+                  "non_manifold_edges": 0,
+                  "zero_area_faces": 0,
+                  "zero_normals": 0,
+                  "signed_volume_m3": 0.03584,
+                  "normals_outward_consistent": true,
+                  "uv_layers": 1,
+                  "uv_area_total": 0.648
+                },
+                {
+                  "name": "Var_03_Heavy",
+                  "is_ucx": false,
+                  "verts": 8,
+                  "tris": 12,
+                  "origin_world_m": [
+                    0.0,
+                    -0.65,
+                    0.0
+                  ],
+                  "bbox_min_m": [
+                    -0.625,
+                    -0.74,
+                    0.0
+                  ],
+                  "bbox_max_m": [
+                    0.625,
+                    -0.56,
+                    0.32
+                  ],
+                  "dimensions_m": [
+                    1.25,
+                    0.18,
+                    0.32
+                  ],
+                  "non_manifold_edges": 0,
+                  "zero_area_faces": 0,
+                  "zero_normals": 0,
+                  "signed_volume_m3": 0.072,
+                  "normals_outward_consistent": true,
+                  "uv_layers": 1,
+                  "uv_area_total": 0.648
+                }
+              ],
+              "ucx_colliders": [
+                {
+                  "name": "UCX_Var_01_Standard_01",
+                  "is_ucx": true,
+                  "verts": 8,
+                  "tris": 12,
+                  "origin_world_m": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "bbox_min_m": [
+                    -0.5,
+                    -0.08,
+                    0.0
+                  ],
+                  "bbox_max_m": [
+                    0.5,
+                    0.08,
+                    0.28
+                  ],
+                  "dimensions_m": [
+                    1.0,
+                    0.16,
+                    0.28
+                  ],
+                  "non_manifold_edges": 0,
+                  "zero_area_faces": 0,
+                  "zero_normals": 0,
+                  "signed_volume_m3": 0.0448,
+                  "normals_outward_consistent": true,
+                  "uv_layers": 0,
+                  "uv_area_total": 0.0
+                }
+              ],
+              "sockets": [
+                {
+                  "name": "Socket_Muzzle",
+                  "parent": "Var_01_Standard",
+                  "location_blender_m": [
+                    0.5,
+                    0.0,
+                    0.14
+                  ],
+                  "location_ue5_cm": [
+                    50.0,
+                    0.0,
+                    14.0
+                  ]
+                },
+                {
+                  "name": "Socket_Grip",
+                  "parent": "Var_01_Standard",
+                  "location_blender_m": [
+                    -0.12,
+                    0.0,
+                    0.04
+                  ],
+                  "location_ue5_cm": [
+                    -12.0,
+                    0.0,
+                    4.0
+                  ]
+                }
+              ],
+              "exported_files": [
+                {
+                  "path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_C\\exports\\ModularBridgePack.glb",
+                  "format": "glb",
+                  "size_bytes": 6108,
+                  "valid_binary_header": true
+                },
+                {
+                  "path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_C\\exports\\ModularBridgePack.fbx",
+                  "format": "fbx",
+                  "size_bytes": 19612,
+                  "valid_binary_header": true
+                }
+              ],
+              "headless_workbench_render_ok": true,
+              "headless_workbench_preview": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_C\\exports\\audit_workbench_ortho.png",
+              "violacoes": [],
+              "blender_cli_returncode": 0,
+              "latencia_verificacao_s": 1.773,
+              "tentativas_loop": 1,
+              "aprovado_pass_1": true
+            },
+            "recibo_ue5_cpp": {
+              "schema": "isaque.kev01.verificador_fisico_ue5_cpp/1.0",
+              "header_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_C\\ModularBridgeAssetActor.h",
+              "source_path": "D:\\Beyond Adonai\\Isaque\\laboratorio-kev-01\\desafios\\saidas_arena\\DESAFIO-03_C\\ModularBridgeAssetActor.cpp",
+              "aprovado_mecanico": true,
+              "invariantes_8_de_8": {
+                "inv_01_pragma_once": true,
+                "inv_02_generated_h_ultimo_include": true,
+                "inv_03_uclass_ou_ustruct_presente": true,
+                "inv_04_generated_body_pareado": true,
+                "inv_05_zero_ponteiro_uobject_cru_sem_gc": true,
+                "inv_06_zero_new_bruto_em_uobject": true,
+                "inv_07_ciclo_vida_e_macros_ue5_validos": true,
+                "inv_08_clang_cpp20_fsyntax_only_zero_erros": true
+              },
+              "violacoes": [],
+              "ast_telemetria": {
+                "header_ast_errors": 17,
+                "source_ast_errors": 0,
+                "includes_header_ordem": [
+                  "CoreMinimal.h",
+                  "Engine/DataTable.h",
+                  "Components/StaticMeshComponent.h",
+                  "GameFramework/Actor.h",
+                  "ModularBridgeAssetActor.generated.h"
+                ],
+                "tipos_refletidos": [
+                  "USTRUCT:FModularBridgeVariantRow",
+                  "UCLASS:AModularBridgeAssetActor"
+                ],
+                "membros_uobject_auditados": 5,
+                "ponteiros_crus_uobject_violadores": [],
+                "new_bruto_uobject_violadores": [],
+                "ufunctions_detectadas": 2,
+                "uproperties_detectadas": 10
+              },
+              "clang_cpp20": {
+                "binario": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\x64\\bin\\clang++.exe",
+                "exit_code": 0,
+                "zero_erros_sintaxe": true,
+                "stderr_diagnostico": ""
+              },
+              "tentativas_loop": 1,
+              "aprovado_pass_1": true
+            }
+          }
+        }
+      ]
+    }
+  },
+  "julgamento_cego_contraditorio_35b": [
+    {
+      "desafio_id": "DESAFIO-01",
+      "autor_session": "ce5dabcc-19e6-405b-b251-9c8ceacf1937",
+      "revisor_session": "juiz-35b-contraditorio-kev01-9f4a2e11",
+      "contraditorio_valido": true,
+      "mapa_cego": {
+        "PACOTE_1": "A",
+        "PACOTE_2": "C",
+        "PACOTE_3": "B"
+      },
+      "veredito_juiz_35b": {
+        "justificativa": "P2 aprovado mecânico e dimensional; P1/P3 falham em pivot/bbox.",
+        "PACOTE_1": 1.0,
+        "PACOTE_2": 9.5,
+        "PACOTE_3": 1.5
+      },
+      "latencia_juiz_s": 55.574
+    },
+    {
+      "desafio_id": "DESAFIO-02",
+      "autor_session": "ce5dabcc-19e6-405b-b251-9c8ceacf1937",
+      "revisor_session": "juiz-35b-contraditorio-kev01-9f4a2e11",
+      "contraditorio_valido": true,
+      "mapa_cego": {
+        "PACOTE_1": "C",
+        "PACOTE_2": "A",
+        "PACOTE_3": "B"
+      },
+      "veredito_juiz_35b": {
+        "justificativa": "P1 aprovado mecânico (5+3+2=10); P2/P3 falham compilação C++20 (Eixo1=0, Eixo2=1.5, Eixo3=1.5)",
+        "PACOTE_1": 10.0,
+        "PACOTE_2": 3.0,
+        "PACOTE_3": 3.0
+      },
+      "latencia_juiz_s": 51.968
+    },
+    {
+      "desafio_id": "DESAFIO-03",
+      "autor_session": "ce5dabcc-19e6-405b-b251-9c8ceacf1937",
+      "revisor_session": "juiz-35b-contraditorio-kev01-9f4a2e11",
+      "contraditorio_valido": true,
+      "mapa_cego": {
+        "PACOTE_1": "B",
+        "PACOTE_2": "A",
+        "PACOTE_3": "C"
+      },
+      "veredito_juiz_35b": {
+        "justificativa": "P3 aprovado mecânico total (2/2), alta densidade e concisão; P1/P2 falharam em ambos os verificadores.",
+        "PACOTE_1": 0.8,
+        "PACOTE_2": 0.9,
+        "PACOTE_3": 9.5
+      },
+      "latencia_juiz_s": 75.907
+    }
+  ],
+  "telemetria_hardware_final": {
+    "gpu": "NVIDIA GeForce RTX 5060 (8151 MiB)",
+    "vram_pico_global_bateria_mib": 6367,
+    "compute_procs_ativos_pos_arena": 0,
+    "tempo_total_arena_s": 1597.096
+  }
+}
