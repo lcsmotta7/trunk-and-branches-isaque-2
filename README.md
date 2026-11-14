@@ -4,7 +4,7 @@
 
 **Thermodynamic Parsimony, Frozen-Core Cortical Columns, and Non-Destructive Continual Specialization via Orthogonal DoRA and Sparsegen LD-MoLE Routing on Consumer Silicon**
 
-[![CERN Zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24221509.svg)](https://doi.org/10.5281/zenodo.24221509)
+[![CERN Zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24226537.svg)](https://doi.org/10.5281/zenodo.24226537)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97_Hugging_Face-lcsmotta7%2Ftrunk--and--branches--isaque--2-FFD21E)](https://huggingface.co/lcsmotta7/trunk-and-branches-isaque-2)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0001--3081--5505-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0001-3081-5505)
 [![Bitcoin Anchor](https://img.shields.io/badge/Bitcoin_OpenTimestamps-Block_%23975458-F7931A?logo=bitcoin&logoColor=white)](provenance/04-carimbo-de-data.md)
