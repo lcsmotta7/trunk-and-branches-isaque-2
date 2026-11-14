@@ -83,7 +83,6 @@ Cada etapa experimental executada na esta\c{c}\~ao dom\'estica de refer\^encia (
 \toprule
 \textbf{Arquivo de Recibo (\texttt{evidence/})} & \textbf{Bytes} & \textbf{SHA-256} & \textbf{Onde Validou e Por Que \'E Importante} \\
 \midrule
-\texttt{PROVA\_\allowbreak{}LIMITE\_\allowbreak{}...\_\allowbreak{}02.json} & $70.457$ & \texttt{9a47a6..b61033} & Recibo mestre da Fase~VI: trava \texttt{embed\_\allowbreak{}tokens} (\texttt{c78988..}), re\'une $3\times 65=195$ medi\c{c}\~oes e atesta $0$ processos residuais na GPU.\textsuperscript{*} \\
 \texttt{ato2\_\allowbreak{}escada\_\allowbreak{}ondas\_\allowbreak{}3\_\allowbreak{}a\_\allowbreak{}10.json} & $58.311$ & \texttt{fcd12d..04dccd} & Recibo puro do Ato~2: $10$ ondas ($H_0\dots H_{10}$), res\'iduos de Frobenius, $195$ c\'elulas triangulares e sonda de colis\~ao sint\'atica. \\
 \texttt{ato1\_\allowbreak{}desafio04\_\allowbreak{}cego.json} & $11.255$ & \texttt{1daf82..6ae0ad} & Teste cego fora da distribui\c{c}\~ao (\texttt{pass@1=false}): registra o erro real na linha~35 (\texttt{IsValid} em \texttt{USTRUCT*}) e sockets ausentes. \\
 \texttt{ato1\_\allowbreak{}promocao\_\allowbreak{}...\_\allowbreak{}3\_\allowbreak{}10.json} & $3.402$ & \texttt{485f0a..96eec3} & Diagn\'ostico cir\'urgico: comprova que a guarda \texttt{Row == nullptr} restaura $8/8$ invariantes C++20/UHT sem retreino. \\
@@ -95,8 +94,6 @@ Cada etapa experimental executada na esta\c{c}\~ao dom\'estica de refer\^encia (
 \texttt{cli\_\allowbreak{}auditar\_\allowbreak{}hardware.json} & $1.280$ & \texttt{f7ee24..e160edf7} & Telemetria de refer\^encia confirmando \texttt{RTX 5060 8 GB} (\texttt{sm\_120}) e $64\text{ GB}$ de RAM. \\
 \bottomrule
 \end{tabularx}
-\vspace{2pt}
-{\scriptsize \textsuperscript{*}Para preservar o hash SHA-256 original (\texttt{9a47a690..9da977b61033}) citado na Se\c{c}\~ao~6 da monografia, \texttt{PROVA\_\allowbreak{}LIMITE\_\allowbreak{}RUPTURA\_\allowbreak{}E\_\allowbreak{}BLENDER\_\allowbreak{}AO\_\allowbreak{}VIVO\_\allowbreak{}02.json} \'e distribu\'ido sem edi\c{c}\~ao; conforme declarado na Se\c{c}\~ao~7.3, o bloco \texttt{ato\_3} de showcase GUI ali registrado n\~ao integra as reivindica\c{c}\~oes neurais, e seus arquivos \texttt{.blend}/\texttt{.glb} de montagem assistida foram exclu\'idos de \texttt{evidence/}.\par}
 \end{table}
 
 \section{As 195 Medi\c{c}\~oes Triangulares e a Resolu\c{c}\~ao entre \texorpdfstring{$H_0$ e $H_1\dots H_k$}{H0 e H1..Hk}}
@@ -145,12 +142,11 @@ Onda 7 ($H_7$) & \texttt{onda\_7/onda\_\allowbreak{}7\_\allowbreak{}generated.py
 Onda 8 ($H_8$) & \texttt{onda\_8/ReplicatedPressureValve.*} & $2.366$ & \texttt{8ce55efa} & \texttt{clang++ -std=c++20}: replica\c{c}\~ao \texttt{DOREPLIFETIME} \& \texttt{OnRep} aprovada. \\
 Onda 9 ($H_9$) & \texttt{onda\_9/IndustrialCatwalkHism.*} & $2.167$ & \texttt{78813312} & \texttt{clang++ -std=c++20}: instanciamento \texttt{UHierarchicalISM} aprovado. \\
 Onda 10 ($H_{10}$) & \texttt{onda\_10/manifest\_\allowbreak{}blender.py} + C++ & $4.976$ & \texttt{abc3f213} & \texttt{PumpingUnit\_Manifest.glb} ($11.728\text{ B}$, \texttt{3e8e920f}) + C++20. \\
-Estagiado C++ & \texttt{KinsmanPumpingStationActor.*} & $3.841$ & \texttt{verificado} & Sintetizado por troca sequencial de cartuchos ($8/8$ UHT/\texttt{clang++}). \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-\auditbox{Exclus\~ao Estrita de Showcases GUI com Agente Auxiliar (\texttt{R-VERDADE-OU-AJUDA})}{Durante sess\~oes explorat\'orias de tela ao vivo, um agente auxiliar escreveu scripts de montagem visual no host (\texttt{construir\_\allowbreak{}ao\_\allowbreak{}vivo\_\allowbreak{}na\_\allowbreak{}tela.py} e \texttt{Refinaria-\allowbreak{}Kinsman-\allowbreak{}Ao-\allowbreak{}Vivo-01}). Esses arquivos assistidos (\texttt{planta\_\allowbreak{}industrial\_\allowbreak{}kinsman\_\allowbreak{}ao\_\allowbreak{}vivo.blend}, \texttt{planta\_\allowbreak{}industrial\_\allowbreak{}kinsman.glb} e \texttt{render\_\allowbreak{}planta\_\allowbreak{}ao\_\allowbreak{}vivo.png}) foram \textbf{100\% exclu\'idos deste arquivo de evid\^encias}, garantindo que todo artefato dentro de \texttt{evidence/solo\_\allowbreak{}model\_\allowbreak{}outputs\_*} represente exclusivamente a a\c{c}\~ao aut\^onoma do modelo Isaque~2.0.}
+\auditbox{Exclus\~ao Estrita de Showcases GUI com Agente Auxiliar (\texttt{R-VERDADE-OU-AJUDA})}{Durante sess\~oes explorat\'orias de tela ao vivo, um agente auxiliar escreveu scripts de montagem visual no host (\texttt{construir\_\allowbreak{}ao\_\allowbreak{}vivo\_\allowbreak{}na\_\allowbreak{}tela.py} e \texttt{Refinaria-\allowbreak{}Kinsman-\allowbreak{}Ao-\allowbreak{}Vivo-01}). Todos os arquivos de showcase do Ato~3 / Kinsman, JSONs consolidadores (\texttt{PROVA\_LIMITE\_*\_AO\_VIVO\_02.json}, \texttt{kinsman\_*\_spec.json}) e scripts com renomea\c{c}\~ao no host (\texttt{KinsmanPumpingStationActor.*}, \texttt{planta\_industrial\_kinsman*}) foram \textbf{100\% exclu\'idos deste pacote}, garantindo que todo artefato dentro de \texttt{evidence/solo\_\allowbreak{}model\_\allowbreak{}outputs\_*} represente exclusivamente a a\c{c}\~ao aut\^onoma do modelo Isaque~2.0.}
 
 \section{Por Que os Erros Reais e Limites Registrados Provam Aus\^encia de Forjamento}
 
